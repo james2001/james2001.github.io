@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.df4ea7ad.chunk.css",
-    "main.js": "/static/js/main.ebb76662.chunk.js",
-    "main.js.map": "/static/js/main.ebb76662.chunk.js.map",
+    "main.js": "/static/js/main.0961f7aa.chunk.js",
+    "main.js.map": "/static/js/main.0961f7aa.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2f949914.js",
     "runtime-main.js.map": "/static/js/runtime-main.2f949914.js.map",
     "static/css/2.3189d373.chunk.css": "/static/css/2.3189d373.chunk.css",
-    "static/js/2.2353544e.chunk.js": "/static/js/2.2353544e.chunk.js",
-    "static/js/2.2353544e.chunk.js.map": "/static/js/2.2353544e.chunk.js.map",
+    "static/js/2.191880d2.chunk.js": "/static/js/2.191880d2.chunk.js",
+    "static/js/2.191880d2.chunk.js.map": "/static/js/2.191880d2.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.3189d373.chunk.css.map": "/static/css/2.3189d373.chunk.css.map",
     "static/css/main.df4ea7ad.chunk.css.map": "/static/css/main.df4ea7ad.chunk.css.map",
-    "static/js/2.2353544e.chunk.js.LICENSE.txt": "/static/js/2.2353544e.chunk.js.LICENSE.txt",
+    "static/js/2.191880d2.chunk.js.LICENSE.txt": "/static/js/2.191880d2.chunk.js.LICENSE.txt",
     "static/media/calendar.db2d9307.svg": "/static/media/calendar.db2d9307.svg",
     "static/media/close.5cc175f1.svg": "/static/media/close.5cc175f1.svg",
     "static/media/facebook.250328ed.svg": "/static/media/facebook.250328ed.svg",
@@ -26,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.2f949914.js",
     "static/css/2.3189d373.chunk.css",
-    "static/js/2.2353544e.chunk.js",
+    "static/js/2.191880d2.chunk.js",
     "static/css/main.df4ea7ad.chunk.css",
-    "static/js/main.ebb76662.chunk.js"
+    "static/js/main.0961f7aa.chunk.js"
   ]
 }
