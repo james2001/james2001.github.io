@@ -1,5 +1,12 @@
 [
    {
+      "role": "Lead Dev",
+      "date": "Juillet 2021 - Septembre 2022",
+      "location": "Paris, France",
+      "company": "MeilleurTaux",
+      "explanation": "Construction d'un tunnel de souscription en assurance vie / PER"
+   },
+   {
       "role": "Développeur Sylius",
       "date": "Septembre 2021 - Juin 2022",
       "location": "Aix-en-Provence, France",
