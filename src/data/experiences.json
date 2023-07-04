@@ -1,5 +1,19 @@
 [
    {
+      "role": "Dev",
+      "date": "Avril 2023 - Mai 2023",
+      "location": "Paris, France",
+      "company": "BricoBrico",
+      "explanation": "Evolution sur les sites de e-commerce sous Sylius."
+   },
+   {
+      "role": "Dev Ops",
+      "date": "Janvier 2023 - Mars 2023",
+      "location": "Paris, France",
+      "company": "relevanC",
+      "explanation": "Audit du code de l'application avec rédaction d'un rapport et mise en place de monitoring. Optimisation de routes sur l'API"
+   },
+   {
       "role": "Lead Dev",
       "date": "Juillet 2021 - Septembre 2022",
       "location": "Paris, France",

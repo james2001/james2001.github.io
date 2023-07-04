@@ -59,6 +59,14 @@
         {
           "title": "MongoDB",
           "value": 1
+        },
+        {
+          "title": "Elasticsearch",
+          "value": 1
+        },
+        {
+          "title": "Meilisearch",
+          "value": 1
         }
       ]
     },
