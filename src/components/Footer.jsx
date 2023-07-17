@@ -5,8 +5,12 @@ import twitter from "../assets/images/twitter.svg";
 import malt from "../assets/images/malt.svg";
 import linkedin from "../assets/images/linkedin.svg";
 import user from "../data/user.json";
+import i18next from "i18next";
 
 const Footer = () => {
+  const changeLanguage = (lng) => {
+    i18next.changeLanguage(lng);
+    }
   return (
     <section id="footer">
       <div className="container">
@@ -35,6 +39,10 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          <div>
+              <button onClick={() => changeLanguage('fr')}>FR</button>
+              <button onClick={() => changeLanguage('en')}>EN</button>
+            </div>
         </div>
       </div>
     </section>
