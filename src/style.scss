@@ -6,8 +6,12 @@
     transform: translateY(-30px);
   }
 }
+.fork-github {
+  display: flex;
+  justify-content: end;
+}
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: $main;
   position: relative;
 }
@@ -49,7 +53,7 @@ li.nav-item {
       }
     }
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       width: 0%;
       height: 2px;
@@ -73,7 +77,6 @@ a.nav-link.nav-button {
 }
 nav.navbar.navbar-expand-lg {
   padding: 20px 0px;
-  background: $main;
 }
 .header-content {
   min-height: 100vh;
@@ -138,7 +141,7 @@ nav.navbar.navbar-expand-lg {
     display: inline-block;
     position: relative;
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       left: 50%;
       bottom: -15px;
@@ -267,7 +270,7 @@ section#competences {
   position: relative;
   padding-bottom: 50px;
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     width: 2px;
     height: 100%;
@@ -277,7 +280,7 @@ section#competences {
     transform: translate(-50%, 0px);
   }
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     width: 18px;
     height: 18px;
@@ -366,7 +369,7 @@ section#certifications {
       color: $third;
     }
     span::before {
-      content: "// ";
+      content: '// ';
     }
   }
 }
@@ -525,6 +528,7 @@ a.link-twitter {
   }
 }
 
-.navbar-brand, .navbar-brand:hover {
-  color: $second
+.navbar-brand,
+.navbar-brand:hover {
+  color: $second;
 }

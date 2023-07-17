@@ -1,8 +1,9 @@
-import React, { Fragment } from "react";
-import close from "../assets/images/close.svg";
-import menu from "../assets/images/menu.svg";
-import user from "../data/user.json";
-import { withTranslation } from "react-i18next";
+import React, { Fragment } from 'react';
+import close from '../assets/images/close.svg';
+import menu from '../assets/images/menu.svg';
+import github from '../assets/images/github.png';
+import user from '../data/user.json';
+import { withTranslation } from 'react-i18next';
 
 const Header = ({ t }) => {
   return (
@@ -23,38 +24,45 @@ const Header = ({ t }) => {
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <a className="nav-link active" href="#qui-suis-je">
-                  {t("title.about")}
+                  {t('title.about')}
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#competences">
-                  {t("title.skills")}
+                  {t('title.skills')}
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#experiances">
-                  {t("title.experiences")}
+                  {t('title.experiences')}
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#formations">
-                  {t("title.trainings")}
+                  {t('title.trainings')}
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#certifications">
-                  {t("title.certifications")}
+                  {t('title.certifications')}
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link nav-button" href="#contact">
-                  {t("title.contact")}
+                  {t('title.contact')}
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+
+      <a
+        className="fork-github"
+        href="https://github.com/james2001/james2001.github.io"
+      >
+        <img src={github} alt="#" />
+      </a>
 
       <div
         className="offcanvas offcanvas-end mobile-menu-wraper"
@@ -71,32 +79,32 @@ const Header = ({ t }) => {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a className="nav-link active" href="#qui-suis-je">
-                {t("title.about")}
+                {t('title.about')}
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#competences">
-                {t("title.skills")}
+                {t('title.skills')}
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#experiances">
-                {t("title.experiences")}
+                {t('title.experiences')}
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#formations">
-                {t("title.trainings")}
+                {t('title.trainings')}
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#certifications">
-                {t("title.certifications")}
+                {t('title.certifications')}
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link nav-button" href="#contact">
-                {t("title.contact")}
+                {t('title.contact')}
               </a>
             </li>
           </ul>
@@ -106,4 +114,4 @@ const Header = ({ t }) => {
   );
 };
 
-export default withTranslation("common")(Header);
+export default withTranslation('common')(Header);
