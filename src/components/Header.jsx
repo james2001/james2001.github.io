@@ -60,6 +60,7 @@ const Header = ({ t }) => {
       <a
         className="fork-github"
         href="https://github.com/james2001/james2001.github.io"
+        target="_blank" rel="noreferrer"
       >
         <img src={github} alt="#" />
       </a>
