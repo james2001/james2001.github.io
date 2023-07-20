@@ -15,7 +15,7 @@ const Header = ({ t }) => {
       <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
           <span className="navbar-brand">{user.name}</span>
-        <div style={{ display: 'flex', gap: '10px' }}>
+        <div className='container-button'>
           <button onClick={() => changeLanguage('fr')} className="flag-button">
              <img src="https://www.herodote.net/_image/france.jpg" alt="Drapeau français" style={{ width: '30px', height: 'auto' }} />
           </button>

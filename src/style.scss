@@ -31,6 +31,10 @@ section#header {
   background: $main;
   color: $second;
 }
+.container-button {
+  display: flex;
+  gap: 10px;
+}
 .flag-button {
   padding: 0;
   border: none;
