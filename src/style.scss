@@ -9,6 +9,10 @@
 .fork-github {
   display: flex;
   justify-content: end;
+  position: absolute;
+  right: 0;
+  width: 130px;
+  z-index: 1100;
 }
 body {
   font-family: 'Poppins', sans-serif;
@@ -195,7 +199,7 @@ section#qui-suis-je {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  flex-direction: column;
+  margin-bottom: 100px;
   height: 222px;
 }
 .competences-name {
@@ -207,7 +211,7 @@ section#qui-suis-je {
   width: 35%;
 }
 .competences-part {
-  width: 25%;
+  width: 27%;
 }
 .competences-item-wraper {
   width: 65%;
