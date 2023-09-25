@@ -1,10 +1,10 @@
 [
    {
-      "role": "Dev",
-      "date": "Avril 2023 - Mai 2023",
-      "location": "Paris, France",
-      "company": "BricoBrico",
-      "explanation": "Evolution sur les sites de e-commerce sous Sylius."
+      "role": "Développeur Sylius",
+      "date": "avril 2023 - septembre 2023",
+      "location": "Puteaux, France",
+      "company": "Brico Brico",
+      "explanation": "Au cours de ma collaboration avec Louis et son équipe, j'ai été impliqué dans diverses tâches techniques pour améliorer leur projet Sylius. Parmi les réalisations notables, j'ai géré l'intégration d'Axeptio en utilisant Google Tag Manager (GTM) et le Facebook Pixel pour optimiser la gestion des consentements et le suivi des utilisateurs. J'ai également intégré plusieurs éléments à leur projet, contribuant ainsi à enrichir et améliorer l'expérience utilisateur."
    },
    {
       "role": "Dev Ops",
