@@ -2,7 +2,7 @@ import React from "react";
 import RatingDot from "./RatingDot";
 import AnimateOnScroll from "./AnimateOnScroll";
 
-const ListSkills = ({ title, arr }) => {
+const ListSkills = ({ title, arr, lang = 'fr' }) => {
   return (
     <AnimateOnScroll animation="fadeInLeft" delay="0s" className="competences-item-main">
     <div className="competences-name">
@@ -12,7 +12,7 @@ const ListSkills = ({ title, arr }) => {
         {arr.map((a, key) => {
           return (
                 <div key={key} className="competences-item">
-                  <h3>{a.title}</h3>
+                  <h3>{typeof a.title === 'object' ? a.title[lang] : a.title}</h3>
                 <RatingDot value={a.value} />
             </div>
           );

@@ -5,14 +5,16 @@ import ListSkills from "./common/ListSkills";
 import { withTranslation } from "react-i18next";
 import AnimateOnScroll from "./common/AnimateOnScroll";
 
-const Competences = ({ t }) => {
+const Competences = ({ t, i18n }) => {
+  const currentLang = i18n.language;
+
   // Organisation des compétences en 3 colonnes
-  const column1 = ["Soft Skills", "Languages"];
-  const column2 = ["Databases", "Architecture"];
-  const column3 = ["Frameworks", "Version Control", "DevOps"];
+  const column1 = ["Soft Skills", currentLang === "fr" ? "Langages" : "Languages"];
+  const column2 = [currentLang === "fr" ? "Bases de données" : "Databases", "Architecture"];
+  const column3 = ["Frameworks", currentLang === "fr" ? "Contrôle de version" : "Version Control", "DevOps"];
 
   const getSkillsByColumn = (categories) => {
-    return datas.filter(skill => categories.includes(skill.category));
+    return datas.filter(skill => categories.includes(skill.category[currentLang]));
   };
 
   return (
@@ -34,7 +36,7 @@ const Competences = ({ t }) => {
                 <div className="competences-column">
                   {getSkillsByColumn(column1).map((skills, key) => (
                     <div key={key} className="competences-part">
-                      <ListSkills title={skills.category} arr={skills.detail} />
+                      <ListSkills title={skills.category[currentLang]} arr={skills.detail} lang={currentLang} />
                     </div>
                   ))}
                 </div>
@@ -42,7 +44,7 @@ const Competences = ({ t }) => {
                 <div className="competences-column">
                   {getSkillsByColumn(column2).map((skills, key) => (
                     <div key={key} className="competences-part">
-                      <ListSkills title={skills.category} arr={skills.detail} />
+                      <ListSkills title={skills.category[currentLang]} arr={skills.detail} lang={currentLang} />
                     </div>
                   ))}
                 </div>
@@ -50,7 +52,7 @@ const Competences = ({ t }) => {
                 <div className="competences-column">
                   {getSkillsByColumn(column3).map((skills, key) => (
                     <div key={key} className="competences-part">
-                      <ListSkills title={skills.category} arr={skills.detail} />
+                      <ListSkills title={skills.category[currentLang]} arr={skills.detail} lang={currentLang} />
                     </div>
                   ))}
                 </div>

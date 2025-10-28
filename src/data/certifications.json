@@ -1,22 +1,37 @@
 [
     {
-        "name": "Optimisez votre déploiement en créant des conteneurs docker",
+        "name": {
+            "en": "Optimize your deployment by creating Docker containers",
+            "fr": "Optimisez votre déploiement en créant des conteneurs docker"
+        },
         "year": 2019
     },
     {
-        "name": "Prenez en main Bootstrap",
+        "name": {
+            "en": "Master Bootstrap",
+            "fr": "Prenez en main Bootstrap"
+        },
         "year": 2015
     },
     {
-        "name": "Apprenez a créer votre site web avec HTML5 et CSS3",
+        "name": {
+            "en": "Learn to create your website with HTML5 and CSS3",
+            "fr": "Apprenez a créer votre site web avec HTML5 et CSS3"
+        },
         "year": 2014
     },
     {
-        "name": "Gérez votre code avec Git et Github",
+        "name": {
+            "en": "Manage your code with Git and Github",
+            "fr": "Gérez votre code avec Git et Github"
+        },
         "year": 2014
     },
     {
-        "name": "Intégrateur web",
+        "name": {
+            "en": "Web Integrator",
+            "fr": "Intégrateur web"
+        },
         "year": 2014
     }
 ]

@@ -1,157 +1,268 @@
 [
     {
-        "category":"Soft Skills",
+        "category": {
+            "en": "Soft Skills",
+            "fr": "Soft Skills"
+        },
         "detail": [
-        {
-          "title": "Leadership Technique",
-          "value": 4
-        },
-        {
-          "title": "Vision Stratégique",
-          "value": 4
-        },
-        {
-          "title": "Mentorat d'Équipe",
-          "value": 4
-        },
-        {
-          "title": "Communication",
-          "value": 4
-        },
-        {
-          "title": "Gestion de Projet",
-          "value": 4
-        }
-      ]
+            {
+                "title": {
+                    "en": "Technical Leadership",
+                    "fr": "Leadership Technique"
+                },
+                "value": 4
+            },
+            {
+                "title": {
+                    "en": "Strategic Vision",
+                    "fr": "Vision Stratégique"
+                },
+                "value": 4
+            },
+            {
+                "title": {
+                    "en": "Team Mentoring",
+                    "fr": "Mentorat d'Équipe"
+                },
+                "value": 4
+            },
+            {
+                "title": {
+                    "en": "Communication",
+                    "fr": "Communication"
+                },
+                "value": 4
+            },
+            {
+                "title": {
+                    "en": "Project Management",
+                    "fr": "Gestion de Projet"
+                },
+                "value": 4
+            }
+        ]
     },
     {
-      "category": "Languages",
-      "detail": [
-        {
-          "title": "PHP",
-          "value": 4
+        "category": {
+            "en": "Languages",
+            "fr": "Langages"
         },
-        {
-          "title": "JavaScript",
-          "value": 3
-        },
-        {
-          "title": "HTML",
-          "value": 4
-        },
-        {
-          "title": "CSS",
-          "value": 3
-        },
-        {
-          "title": "Java",
-          "value": 2
-        },
-        {
-          "title": "SQL",
-          "value": 3
-        }
-      ]
+        "detail": [
+            {
+                "title": {
+                    "en": "PHP",
+                    "fr": "PHP"
+                },
+                "value": 4
+            },
+            {
+                "title": {
+                    "en": "JavaScript",
+                    "fr": "JavaScript"
+                },
+                "value": 3
+            },
+            {
+                "title": {
+                    "en": "HTML",
+                    "fr": "HTML"
+                },
+                "value": 4
+            },
+            {
+                "title": {
+                    "en": "CSS",
+                    "fr": "CSS"
+                },
+                "value": 3
+            },
+            {
+                "title": {
+                    "en": "Java",
+                    "fr": "Java"
+                },
+                "value": 2
+            },
+            {
+                "title": {
+                    "en": "SQL",
+                    "fr": "SQL"
+                },
+                "value": 3
+            }
+        ]
     },
     {
-        "category":"Databases",
+        "category": {
+            "en": "Databases",
+            "fr": "Bases de données"
+        },
         "detail": [
-        {
-          "title": "MySQL",
-          "value": 3
-        },
-        {
-          "title": "MongoDB",
-          "value": 1
-        },
-        {
-          "title": "Elasticsearch",
-          "value": 1
-        },
-        {
-          "title": "Meilisearch",
-          "value": 1
-        }
-      ]
+            {
+                "title": {
+                    "en": "MySQL",
+                    "fr": "MySQL"
+                },
+                "value": 3
+            },
+            {
+                "title": {
+                    "en": "MongoDB",
+                    "fr": "MongoDB"
+                },
+                "value": 1
+            },
+            {
+                "title": {
+                    "en": "Elasticsearch",
+                    "fr": "Elasticsearch"
+                },
+                "value": 1
+            },
+            {
+                "title": {
+                    "en": "Meilisearch",
+                    "fr": "Meilisearch"
+                },
+                "value": 1
+            }
+        ]
     },
     {
-        "category":"Architecture",
+        "category": {
+            "en": "Architecture",
+            "fr": "Architecture"
+        },
         "detail": [
-        {
-          "title": "REST",
-          "value": 4
-        },
-        {
-          "title": "API",
-          "value": 4
-        },
-        {
-          "title": "Microservices",
-          "value": 3
-        },
-        {
-          "title": "Event-Driven",
-          "value": 3
-        },
-        {
-          "title": "CQRS",
-          "value": 2
-        }
-      ]
+            {
+                "title": {
+                    "en": "REST",
+                    "fr": "REST"
+                },
+                "value": 4
+            },
+            {
+                "title": {
+                    "en": "API",
+                    "fr": "API"
+                },
+                "value": 4
+            },
+            {
+                "title": {
+                    "en": "Microservices",
+                    "fr": "Microservices"
+                },
+                "value": 3
+            },
+            {
+                "title": {
+                    "en": "Event-Driven",
+                    "fr": "Event-Driven"
+                },
+                "value": 3
+            },
+            {
+                "title": {
+                    "en": "CQRS",
+                    "fr": "CQRS"
+                },
+                "value": 2
+            }
+        ]
     },
     {
-        "category":"Frameworks",
+        "category": {
+            "en": "Frameworks",
+            "fr": "Frameworks"
+        },
         "detail": [
-        {
-          "title": "Symfony",
-          "value": 4
-        },
-        {
-          "title": "Jquery",
-          "value": 3
-        },
-        {
-          "title": "Bootstrap",
-          "value": 2
-        },
-        {
-          "title": "React",
-          "value": 2
-        }
-      ]
+            {
+                "title": {
+                    "en": "Symfony",
+                    "fr": "Symfony"
+                },
+                "value": 4
+            },
+            {
+                "title": {
+                    "en": "Jquery",
+                    "fr": "Jquery"
+                },
+                "value": 3
+            },
+            {
+                "title": {
+                    "en": "Bootstrap",
+                    "fr": "Bootstrap"
+                },
+                "value": 2
+            },
+            {
+                "title": {
+                    "en": "React",
+                    "fr": "React"
+                },
+                "value": 2
+            }
+        ]
     },
     {
-        "category":"Version Control",
+        "category": {
+            "en": "Version Control",
+            "fr": "Contrôle de version"
+        },
         "detail": [
-        {
-          "title": "Git",
-          "value": 4
-        },
-        {
-          "title": "GitHub",
-          "value": 3
-        },
-        {
-          "title": "Gitlab",
-          "value": 3
-        }
-      ]
+            {
+                "title": {
+                    "en": "Git",
+                    "fr": "Git"
+                },
+                "value": 4
+            },
+            {
+                "title": {
+                    "en": "GitHub",
+                    "fr": "GitHub"
+                },
+                "value": 3
+            },
+            {
+                "title": {
+                    "en": "Gitlab",
+                    "fr": "Gitlab"
+                },
+                "value": 3
+            }
+        ]
     },
     {
-        "category":"DevOps",
+        "category": {
+            "en": "DevOps",
+            "fr": "DevOps"
+        },
         "detail": [
-        {
-          "title": "Docker",
-          "value": 3
-        },
-        {
-          "title": "CI/CD",
-          "value": 3
-        },
-        {
-          "title": "Kubernetes",
-          "value": 2
-        }
-      ]
+            {
+                "title": {
+                    "en": "Docker",
+                    "fr": "Docker"
+                },
+                "value": 3
+            },
+            {
+                "title": {
+                    "en": "CI/CD",
+                    "fr": "CI/CD"
+                },
+                "value": 3
+            },
+            {
+                "title": {
+                    "en": "Kubernetes",
+                    "fr": "Kubernetes"
+                },
+                "value": 2
+            }
+        ]
     }
-  ]
+]

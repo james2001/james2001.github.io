@@ -1,86 +1,170 @@
 [
    {
-      "role": "Développeur Symfony / Lead Tech",
-      "date": "janvier 2023 - juillet 2025",
+      "role": {
+         "en": "Symfony Developer / Tech Lead",
+         "fr": "Développeur Symfony / Lead Tech"
+      },
+      "startDate": "2023-01",
+      "endDate": "2025-07",
       "location": "Chatou, France",
       "company": "Digdeo",
-      "explanation": "Développement d'une solution de veille technologique visant à cartographier l'intégralité d'Internet pour identifier les hébergeurs de sites web. Architecture et implémentation d'une infrastructure capable de gérer des volumes massifs de données (BigData) avec Symfony, API Platform, RabbitMQ, MariaDB et Meilisearch. Optimisation continue des performances pour indexer et rechercher des milliards de données en temps réel. Collaboration étroite avec Kiora pour la réussite du projet, avec autonomie dans les choix techniques et architecturaux."
+      "explanation": {
+         "en": "Development of a technological monitoring solution aimed at mapping the entire Internet to identify website hosts. Architecture and implementation of infrastructure capable of handling massive data volumes (BigData) with Symfony, API Platform, RabbitMQ, MariaDB and Meilisearch. Continuous performance optimization to index and search billions of data in real time. Close collaboration with Kiora for project success, with autonomy in technical and architectural choices.",
+         "fr": "Développement d'une solution de veille technologique visant à cartographier l'intégralité d'Internet pour identifier les hébergeurs de sites web. Architecture et implémentation d'une infrastructure capable de gérer des volumes massifs de données (BigData) avec Symfony, API Platform, RabbitMQ, MariaDB et Meilisearch. Optimisation continue des performances pour indexer et rechercher des milliards de données en temps réel. Collaboration étroite avec Kiora pour la réussite du projet, avec autonomie dans les choix techniques et architecturaux."
+      }
    },
    {
-      "role": "Développeur Symfony 7",
-      "date": "novembre 2023 - novembre 2024",
+      "role": {
+         "en": "Symfony 7 Developer",
+         "fr": "Développeur Symfony 7"
+      },
+      "startDate": "2023-11",
+      "endDate": "2024-11",
       "location": "Puteaux, France",
       "company": "Safran Electronics & Defense",
-      "explanation": "Suite à la reprise d'un projet back-office chez Safran Optronique, je me suis chargé de faire évoluer une application existante tout en prenant en compte les défis d'une passation technique très limitée. Mon rôle principal a consisté à redéfinir l'architecture et la fonctionnalité de l'outil, tout en assurant la sécurité, un enjeu primordial dans ce secteur. Prise en charge d'un projet existant avec peu voire pas de transfert de connaissances détaillé. Intégration d'améliorations pour une meilleure scalabilité et maintenabilité du produit, tout en assurant des mises à jour régulières sans rupture de service."
+      "explanation": {
+         "en": "Following the takeover of a back-office project at Safran Optronique, I was responsible for evolving an existing application while taking into account the challenges of very limited technical handover. My main role consisted of redefining the architecture and functionality of the tool, while ensuring security, a primary concern in this sector. Took over an existing project with little to no detailed knowledge transfer. Integration of improvements for better scalability and maintainability of the product, while ensuring regular updates without service interruption.",
+         "fr": "Suite à la reprise d'un projet back-office chez Safran Optronique, je me suis chargé de faire évoluer une application existante tout en prenant en compte les défis d'une passation technique très limitée. Mon rôle principal a consisté à redéfinir l'architecture et la fonctionnalité de l'outil, tout en assurant la sécurité, un enjeu primordial dans ce secteur. Prise en charge d'un projet existant avec peu voire pas de transfert de connaissances détaillé. Intégration d'améliorations pour une meilleure scalabilité et maintenabilité du produit, tout en assurant des mises à jour régulières sans rupture de service."
+      }
    },
    {
-      "role": "Développeur Sylius",
-      "date": "avril 2023 - septembre 2023",
+      "role": {
+         "en": "Sylius Developer",
+         "fr": "Développeur Sylius"
+      },
+      "startDate": "2023-04",
+      "endDate": "2023-09",
       "location": "Puteaux, France",
       "company": "Brico Brico",
-      "explanation": "Au cours de ma collaboration avec Louis et son équipe, j'ai été impliqué dans diverses tâches techniques pour améliorer leur projet Sylius. Parmi les réalisations notables, j'ai géré l'intégration d'Axeptio en utilisant Google Tag Manager (GTM) et le Facebook Pixel pour optimiser la gestion des consentements et le suivi des utilisateurs. J'ai également intégré plusieurs éléments à leur projet, contribuant ainsi à enrichir et améliorer l'expérience utilisateur."
+      "explanation": {
+         "en": "During my collaboration with Louis and his team, I was involved in various technical tasks to improve their Sylius project. Among the notable achievements, I managed the integration of Axeptio using Google Tag Manager (GTM) and Facebook Pixel to optimize consent management and user tracking. I also integrated several elements into their project, thus contributing to enriching and improving the user experience.",
+         "fr": "Au cours de ma collaboration avec Louis et son équipe, j'ai été impliqué dans diverses tâches techniques pour améliorer leur projet Sylius. Parmi les réalisations notables, j'ai géré l'intégration d'Axeptio en utilisant Google Tag Manager (GTM) et le Facebook Pixel pour optimiser la gestion des consentements et le suivi des utilisateurs. J'ai également intégré plusieurs éléments à leur projet, contribuant ainsi à enrichir et améliorer l'expérience utilisateur."
+      }
    },
    {
-      "role": "Dev Ops",
-      "date": "Janvier 2023 - Mars 2023",
+      "role": {
+         "en": "DevOps",
+         "fr": "Dev Ops"
+      },
+      "startDate": "2023-01",
+      "endDate": "2023-03",
       "location": "Paris, France",
       "company": "relevanC",
-      "explanation": "Audit du code de l'application avec rédaction d'un rapport et mise en place de monitoring. Optimisation de routes sur l'API"
+      "explanation": {
+         "en": "Application code audit with report writing and monitoring setup. API route optimization.",
+         "fr": "Audit du code de l'application avec rédaction d'un rapport et mise en place de monitoring. Optimisation de routes sur l'API"
+      }
    },
    {
-      "role": "Lead Dev",
-      "date": "Juillet 2021 - Septembre 2022",
+      "role": {
+         "en": "Lead Dev",
+         "fr": "Lead Dev"
+      },
+      "startDate": "2021-07",
+      "endDate": "2022-09",
       "location": "Paris, France",
       "company": "MeilleurTaux",
-      "explanation": "Construction d'un tunnel de souscription en assurance vie / PER"
+      "explanation": {
+         "en": "Building a subscription funnel for life insurance / PER.",
+         "fr": "Construction d'un tunnel de souscription en assurance vie / PER"
+      }
    },
    {
-      "role": "Développeur Sylius",
-      "date": "Septembre 2021 - Juin 2022",
+      "role": {
+         "en": "Sylius Developer",
+         "fr": "Développeur Sylius"
+      },
+      "startDate": "2021-09",
+      "endDate": "2022-06",
       "location": "Aix-en-Provence, France",
       "company": "Onatera",
-      "explanation": "Création d'une plateforme de vente en ligne multilingue. Ajout de spécificité du client sur Sylius"
+      "explanation": {
+         "en": "Creation of a multilingual online sales platform. Adding client-specific features on Sylius.",
+         "fr": "Création d'une plateforme de vente en ligne multilingue. Ajout de spécificité du client sur Sylius"
+      }
    },
    {
-      "role":"Developeur Symfony/API",
-      "date":"Mai 2021 - Septembre 2021",
-      "location":"Paris, France",
-      "company":"Yousign",
-      "explanation":"Mise en place d'un Traking d'utilisateurs avec l'outils Segment. Evolution sur la signature avancée, meilleure gestion d'erreurs, améliorations du suivi (notifications par e-mail)"
+      "role": {
+         "en": "Symfony/API Developer",
+         "fr": "Developeur Symfony/API"
+      },
+      "startDate": "2021-05",
+      "endDate": "2021-09",
+      "location": "Paris, France",
+      "company": "Yousign",
+      "explanation": {
+         "en": "Implementation of user tracking with Segment tool. Evolution on advanced signature, better error management, tracking improvements (email notifications).",
+         "fr": "Mise en place d'un Traking d'utilisateurs avec l'outils Segment. Evolution sur la signature avancée, meilleure gestion d'erreurs, améliorations du suivi (notifications par e-mail)"
+      }
    },
    {
-      "role":"Expert API Platform",
-      "date":"Février 2021 - Avril 2021",
-      "location":"Paris, France",
-      "company":"Assoconnect",
-      "explanation":"Exposition de nouvelles ressources sur l'API existante avec une synchronisation des données legacy. Le but étant de migrer le projet sur une structure API / React et quitter le code legacy"
+      "role": {
+         "en": "API Platform Expert",
+         "fr": "Expert API Platform"
+      },
+      "startDate": "2021-02",
+      "endDate": "2021-04",
+      "location": "Paris, France",
+      "company": "Assoconnect",
+      "explanation": {
+         "en": "Exposure of new resources on the existing API with legacy data synchronization. The goal being to migrate the project to an API / React structure and leave the legacy code.",
+         "fr": "Exposition de nouvelles ressources sur l'API existante avec une synchronisation des données legacy. Le but étant de migrer le projet sur une structure API / React et quitter le code legacy"
+      }
    },
    {
-      "role":"Développeur Symfony",
-      "date":"Août 2020 - Février 2021",
-      "location":"Paris, France",
-      "company":"ekWateur",
-      "explanation":"Mise en place des appels API vers un nouveau WS Rest en vue d'une migration (avec feature flag). Audit sur la qualité de code. Mise en place d'outils de contrôle qualité"
+      "role": {
+         "en": "Symfony Developer",
+         "fr": "Développeur Symfony"
+      },
+      "startDate": "2020-08",
+      "endDate": "2021-02",
+      "location": "Paris, France",
+      "company": "ekWateur",
+      "explanation": {
+         "en": "Implementation of API calls to a new REST WS for migration (with feature flag). Code quality audit. Implementation of quality control tools.",
+         "fr": "Mise en place des appels API vers un nouveau WS Rest en vue d'une migration (avec feature flag). Audit sur la qualité de code. Mise en place d'outils de contrôle qualité"
+      }
    },
    {
-      "role":"Développeur Symfony",
-      "date":"Mars 2020 - Mars 2020",
-      "location":"Paris, France",
-      "company":"Dimension 4",
-      "explanation":"Mise en place de deux connecteurs à des Web Service, un en XML RPC et l'autre en REST. J'ai développé un composant et un Bundle pour le second."
+      "role": {
+         "en": "Symfony Developer",
+         "fr": "Développeur Symfony"
+      },
+      "startDate": "2020-03",
+      "endDate": "2020-03",
+      "location": "Paris, France",
+      "company": "Dimension 4",
+      "explanation": {
+         "en": "Implementation of two Web Service connectors, one in XML RPC and the other in REST. I developed a component and a Bundle for the second one.",
+         "fr": "Mise en place de deux connecteurs à des Web Service, un en XML RPC et l'autre en REST. J'ai développé un composant et un Bundle pour le second."
+      }
    },
    {
-      "role":"Team Lead/Lead Dev",
-      "date":"Juillet 2014 - Juillet 2020",
-      "location":"Puteaux, France",
-      "company":"Manymore",
-      "explanation":"Mise en place de solutions de dématérialisation des actes de gestion d'assurance vie pour AXA et Cardif. Réalisation d'un extranet pour la visualisation des contrats / clients et commissions."
+      "role": {
+         "en": "Team Lead/Lead Dev",
+         "fr": "Team Lead/Lead Dev"
+      },
+      "startDate": "2014-07",
+      "endDate": "2020-07",
+      "location": "Puteaux, France",
+      "company": "Manymore",
+      "explanation": {
+         "en": "Implementation of life insurance management act dematerialization solutions for AXA and Cardif. Creation of an extranet for contracts/clients and commissions visualization.",
+         "fr": "Mise en place de solutions de dématérialisation des actes de gestion d'assurance vie pour AXA et Cardif. Réalisation d'un extranet pour la visualisation des contrats / clients et commissions."
+      }
    },
    {
-      "role":"Développeur Symfony",
-      "date":"Novembre 2008 - Juin 2014",
-      "location":"La Garenne-Colombes, France",
-      "company":"Orca Formation",
-      "explanation":"Création de l'application de gestion des ventes et des commissions sur les véhicules pour Renault. Application utilisée par tout le réseau Renault France. Simulateur de crédit/LOA avec gestion des barèmes pour My Money Bank."
+      "role": {
+         "en": "Symfony Developer",
+         "fr": "Développeur Symfony"
+      },
+      "startDate": "2008-11",
+      "endDate": "2014-06",
+      "location": "La Garenne-Colombes, France",
+      "company": "Orca Formation",
+      "explanation": {
+         "en": "Creation of the sales and commission management application for Renault vehicles. Application used by the entire Renault France network. Credit/LOA simulator with rate management for My Money Bank.",
+         "fr": "Création de l'application de gestion des ventes et des commissions sur les véhicules pour Renault. Application utilisée par tout le réseau Renault France. Simulateur de crédit/LOA avec gestion des barèmes pour My Money Bank."
+      }
    }
 ]
