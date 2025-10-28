@@ -1,5 +1,30 @@
 [
     {
+        "category":"Soft Skills",
+        "detail": [
+        {
+          "title": "Leadership Technique",
+          "value": 4
+        },
+        {
+          "title": "Vision Stratégique",
+          "value": 4
+        },
+        {
+          "title": "Mentorat d'Équipe",
+          "value": 4
+        },
+        {
+          "title": "Communication",
+          "value": 4
+        },
+        {
+          "title": "Gestion de Projet",
+          "value": 4
+        }
+      ]
+    },
+    {
       "category": "Languages",
       "detail": [
         {
@@ -25,27 +50,6 @@
         {
           "title": "SQL",
           "value": 3
-        }
-      ]
-    },
-    {
-        "category":"Frameworks",
-        "detail": [
-        {
-          "title": "Symfony",
-          "value": 4
-        },
-        {
-          "title": "Jquery",
-          "value": 3
-        },
-        {
-          "title": "Bootstrap",
-          "value": 2
-        },
-        {
-          "title": "React",
-          "value": 2
         }
       ]
     },
@@ -80,6 +84,39 @@
         {
           "title": "API",
           "value": 4
+        },
+        {
+          "title": "Microservices",
+          "value": 3
+        },
+        {
+          "title": "Event-Driven",
+          "value": 3
+        },
+        {
+          "title": "CQRS",
+          "value": 2
+        }
+      ]
+    },
+    {
+        "category":"Frameworks",
+        "detail": [
+        {
+          "title": "Symfony",
+          "value": 4
+        },
+        {
+          "title": "Jquery",
+          "value": 3
+        },
+        {
+          "title": "Bootstrap",
+          "value": 2
+        },
+        {
+          "title": "React",
+          "value": 2
         }
       ]
     },
@@ -101,11 +138,19 @@
       ]
     },
     {
-        "category":"Containerization",
+        "category":"DevOps",
         "detail": [
         {
           "title": "Docker",
           "value": 3
+        },
+        {
+          "title": "CI/CD",
+          "value": 3
+        },
+        {
+          "title": "Kubernetes",
+          "value": 2
         }
       ]
     }

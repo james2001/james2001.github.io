@@ -5,6 +5,15 @@ import ListSkills from "./common/ListSkills";
 import { withTranslation } from "react-i18next";
 
 const Competences = ({ t }) => {
+  // Organisation des compétences en 3 colonnes
+  const column1 = ["Soft Skills", "Languages"];
+  const column2 = ["Databases", "Architecture"];
+  const column3 = ["Frameworks", "Version Control", "DevOps"];
+
+  const getSkillsByColumn = (categories) => {
+    return datas.filter(skill => categories.includes(skill.category));
+  };
+
   return (
     <section id="competences">
       <div className="container">
@@ -23,13 +32,30 @@ const Competences = ({ t }) => {
             </div>
             <div className="competences-main">
               <div className="competences-wraper">
-                {datas.map((skills, key) => {
-                  return (
+                {/* Colonne 1 */}
+                <div className="competences-column">
+                  {getSkillsByColumn(column1).map((skills, key) => (
                     <div key={key} className="competences-part">
                       <ListSkills title={skills.category} arr={skills.detail} />
                     </div>
-                  );
-                })}
+                  ))}
+                </div>
+                {/* Colonne 2 */}
+                <div className="competences-column">
+                  {getSkillsByColumn(column2).map((skills, key) => (
+                    <div key={key} className="competences-part">
+                      <ListSkills title={skills.category} arr={skills.detail} />
+                    </div>
+                  ))}
+                </div>
+                {/* Colonne 3 */}
+                <div className="competences-column">
+                  {getSkillsByColumn(column3).map((skills, key) => (
+                    <div key={key} className="competences-part">
+                      <ListSkills title={skills.category} arr={skills.detail} />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

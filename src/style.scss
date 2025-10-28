@@ -191,11 +191,14 @@ section#qui-suis-je {
   transform: translate(0%, -50%);
 }
 .competences-rating {
+  display: flex;
+  min-width: 100px;
   span {
     width: 17px;
     height: 17px;
     border-radius: 100%;
     margin-right: 5px;
+    flex-shrink: 0;
   }
 }
 .fill-color {
@@ -218,9 +221,13 @@ section#qui-suis-je {
 .competences-wraper {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin-bottom: 100px;
-  height: 222px;
+}
+
+.competences-column {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 }
 .competences-name {
   h4 {
@@ -231,7 +238,8 @@ section#qui-suis-je {
   width: 35%;
 }
 .competences-part {
-  width: 27%;
+  width: 100%;
+  margin-bottom: 30px;
 }
 .competences-item-wraper {
   width: 65%;

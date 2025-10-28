@@ -1,5 +1,19 @@
 [
    {
+      "role": "Développeur Symfony / Lead Tech",
+      "date": "janvier 2023 - juillet 2025",
+      "location": "Chatou, France",
+      "company": "Digdeo",
+      "explanation": "Développement d'une solution de veille technologique visant à cartographier l'intégralité d'Internet pour identifier les hébergeurs de sites web. Architecture et implémentation d'une infrastructure capable de gérer des volumes massifs de données (BigData) avec Symfony, API Platform, RabbitMQ, MariaDB et Meilisearch. Optimisation continue des performances pour indexer et rechercher des milliards de données en temps réel. Collaboration étroite avec Kiora pour la réussite du projet, avec autonomie dans les choix techniques et architecturaux."
+   },
+   {
+      "role": "Développeur Symfony 7",
+      "date": "novembre 2023 - novembre 2024",
+      "location": "Puteaux, France",
+      "company": "Safran Electronics & Defense",
+      "explanation": "Suite à la reprise d'un projet back-office chez Safran Optronique, je me suis chargé de faire évoluer une application existante tout en prenant en compte les défis d'une passation technique très limitée. Mon rôle principal a consisté à redéfinir l'architecture et la fonctionnalité de l'outil, tout en assurant la sécurité, un enjeu primordial dans ce secteur. Prise en charge d'un projet existant avec peu voire pas de transfert de connaissances détaillé. Intégration d'améliorations pour une meilleure scalabilité et maintenabilité du produit, tout en assurant des mises à jour régulières sans rupture de service."
+   },
+   {
       "role": "Développeur Sylius",
       "date": "avril 2023 - septembre 2023",
       "location": "Puteaux, France",
