@@ -1,9 +1,10 @@
 import React from "react";
 import RatingDot from "./RatingDot";
+import AnimateOnScroll from "./AnimateOnScroll";
 
 const ListSkills = ({ title, arr }) => {
   return (
-    <div className="competences-item-main wow animate__animated animate__fadeInLeft" data-wow-delay="0s">
+    <AnimateOnScroll animation="fadeInLeft" delay="0s" className="competences-item-main">
     <div className="competences-name">
         <h4>{title}</h4>
       </div>
@@ -17,7 +18,7 @@ const ListSkills = ({ title, arr }) => {
           );
         })}
       </div>
-    </div>
+    </AnimateOnScroll>
   );
 };
 

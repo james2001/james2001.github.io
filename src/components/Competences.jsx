@@ -3,6 +3,7 @@ import skill from "../assets/images/skill.png";
 import datas from "../data/skills.json";
 import ListSkills from "./common/ListSkills";
 import { withTranslation } from "react-i18next";
+import AnimateOnScroll from "./common/AnimateOnScroll";
 
 const Competences = ({ t }) => {
   // Organisation des compétences en 3 colonnes
@@ -24,12 +25,9 @@ const Competences = ({ t }) => {
             </div>
           </div>
           <div className="col-12">
-            <div
-              className="section-title wow animate__animated animate__fadeInUp"
-              data-wow-delay="0.1s"
-            >
+            <AnimateOnScroll animation="fadeInUp" delay="0.1s" className="section-title">
               <h2>{t("title.skills")}</h2>
-            </div>
+            </AnimateOnScroll>
             <div className="competences-main">
               <div className="competences-wraper">
                 {/* Colonne 1 */}

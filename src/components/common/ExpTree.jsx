@@ -1,10 +1,11 @@
 import React from "react";
 import calender from "../../assets/images/calendar.svg";
 import location from "../../assets/images/pin.svg";
+import AnimateOnScroll from "./AnimateOnScroll";
 
 const ExpTree = ({ data }) => {
   return (
-    <div className="experiances-item wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+    <AnimateOnScroll animation="fadeInUp" delay="0.1s" className="experiances-item">
     <div className="experiance-position">
       <div className="experiances-name">
         <h3>{data.role}</h3>
@@ -16,7 +17,7 @@ const ExpTree = ({ data }) => {
       <h3>{data.company}</h3>
       <p>{data.explanation}</p>
     </div>
-  </div>
+  </AnimateOnScroll>
   );
 };
 

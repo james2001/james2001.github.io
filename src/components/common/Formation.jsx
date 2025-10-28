@@ -1,11 +1,12 @@
 import React from "react";
+import AnimateOnScroll from "./AnimateOnScroll";
 
 const Formation = ({where, what, when}) => {
   return (
-      <div className="formations-item wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+      <AnimateOnScroll animation="fadeInUp" delay="0.2s" className="formations-item">
                 <h3><span>{what}</span> - {where}</h3>
                 <p>{when}</p>
-              </div>
+              </AnimateOnScroll>
   );
 };
 

@@ -3,6 +3,7 @@ import Certification from "./common/Certification";
 import openclassrooms from "../assets/images/openclassrooms.png";
 import datas from "../data/certifications.json";
 import { withTranslation } from "react-i18next";
+import AnimateOnScroll from "./common/AnimateOnScroll";
 
 const Certifications = ({ t }) => {
   return (
@@ -10,26 +11,17 @@ const Certifications = ({ t }) => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div
-              className="section-title wow animate__animated animate__fadeInUp"
-              data-wow-delay="0.1s"
-            >
+            <AnimateOnScroll animation="fadeInUp" delay="0.1s" className="section-title">
               <h2>{t("title.certifications")}</h2>
-            </div>
+            </AnimateOnScroll>
           </div>
 
           <div className="col-12">
             <div className="certifications-wraper">
-              <div
-                className="certifications-left wow animate__animated animate__fadeInUp"
-                data-wow-delay="0.2s"
-              >
+              <AnimateOnScroll animation="fadeInUp" delay="0.2s" className="certifications-left">
                 <img src={openclassrooms} alt="#" />
-              </div>
-              <div
-                className="certifications-list wow animate__animated animate__fadeInUp"
-                data-wow-delay="0.3s"
-              >
+              </AnimateOnScroll>
+              <AnimateOnScroll animation="fadeInUp" delay="0.3s" className="certifications-list">
                 {datas.map((certification, key) => {
                   return (
                     <Certification
@@ -39,7 +31,7 @@ const Certifications = ({ t }) => {
                     />
                   );
                 })}
-              </div>
+              </AnimateOnScroll>
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import dev from "../assets/images/dev.png";
 import { withTranslation } from "react-i18next";
+import AnimateOnScroll from "./common/AnimateOnScroll";
 
 const About = ({ t }) => {
   return (
@@ -11,20 +12,14 @@ const About = ({ t }) => {
             <div className="qui-suis-je-image">
               <img src={dev} alt="moi" />
             </div>
-            <div
-              className="qui-suis-je-content wow animate__animated animate__fadeInUp"
-              data-wow-delay="0s"
-            >
-              <div
-                className="section-title wow animate__animated animate__fadeInUp"
-                data-wow-delay="0.1s"
-              >
+            <AnimateOnScroll animation="fadeInUp" delay="0s" className="qui-suis-je-content">
+              <AnimateOnScroll animation="fadeInUp" delay="0.1s" className="section-title">
                 <h2>{t("title.about")}</h2>
-              </div>
+              </AnimateOnScroll>
               <p>{t("about.part_1")}</p>
               <p>{t("about.part_2")}</p>
               <p>{t("about.part_3")}</p>
-            </div>
+            </AnimateOnScroll>
           </div>
         </div>
       </div>

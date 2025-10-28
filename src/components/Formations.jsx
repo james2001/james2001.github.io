@@ -3,6 +3,7 @@ import cap from "../assets/images/graduation.png";
 import datas from "../data/formations.json";
 import Formation from "./common/Formation";
 import { withTranslation } from "react-i18next";
+import AnimateOnScroll from "./common/AnimateOnScroll";
 
 const Formations = ({ t }) => {
   return (
@@ -13,12 +14,9 @@ const Formations = ({ t }) => {
         </div>
         <div className="row">
           <div className="col-12">
-            <div
-              className="section-title wow animate__animated animate__fadeInUp"
-              data-wow-delay="0.1s"
-            >
+            <AnimateOnScroll animation="fadeInUp" delay="0.1s" className="section-title">
               <h2>{t("title.trainings")}</h2>
-            </div>
+            </AnimateOnScroll>
           </div>
           <div className="col-12">
             <div className="formations-main">

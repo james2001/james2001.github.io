@@ -5,6 +5,8 @@ import twitter from "../assets/images/twitter.svg";
 import malt from "../assets/images/malt.svg";
 import linkedin from "../assets/images/linkedin.svg";
 import user from "../data/user.json";
+import AnimateOnScroll from "./common/AnimateOnScroll";
+import { WebsiteCarbonBadge } from "react-websitecarbon-badge";
 
 
 const Footer = () => {
@@ -15,10 +17,10 @@ const Footer = () => {
         <div className="row">
           <div className="col-12">
             <div className="footer-wraper">
-              <div className="copyright wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+              <AnimateOnScroll animation="fadeInUp" delay="0.1s" className="copyright">
                 <p>© 2021 {user.name}</p>
-              </div>
-              <div className="footer-social wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+              </AnimateOnScroll>
+              <AnimateOnScroll animation="fadeInUp" delay="0.3s" className="footer-social">
                 <a href="https://www.instagram.com/defispatisserie" className="link-instagram" target="_blank" rel="noreferrer">
                   <img src={instagram} alt="instagram" />
                 </a>
@@ -34,8 +36,13 @@ const Footer = () => {
                 <a href="https://www.linkedin.com/in/stephane-rathgeber/" className="link-linkedin" target="_blank" rel="noreferrer">
                   <img src={linkedin} alt="linkedin" />
                 </a>
-              </div>
+              </AnimateOnScroll>
             </div>
+          </div>
+          <div className="col-12">
+            <AnimateOnScroll animation="fadeInUp" delay="0.5s" className="website-carbon-badge">
+              <WebsiteCarbonBadge url="https://stephane.rathgeber.alsace/" />
+            </AnimateOnScroll>
           </div>
         </div>
       </div>

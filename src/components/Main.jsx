@@ -2,6 +2,7 @@ import React from "react";
 import profile2 from "../assets/images/profil-2.png";
 import arrow_down from "../assets/images/curly-arrow.png";
 import user from "../data/user.json";
+import AnimateOnScroll from "./common/AnimateOnScroll";
 
 const imagesPath = {
   smile: user.picture,
@@ -26,18 +27,18 @@ class Main extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <div className="header-content-wraper wow animate__animated animate__zoomInUp" data-wow-delay="0s">
+              <AnimateOnScroll animation="zoomInUp" delay="0s" className="header-content-wraper">
                 <h1>{user.name}</h1>
                 <h5>Tech Lead Symfony</h5>
-                <div className="profile-photo wow animate__animated animate__zoomInUp" data-wow-delay="0.1s">
+                <AnimateOnScroll animation="zoomInUp" delay="0.1s" className="profile-photo">
                   <img src={imagesPath[imageName]} alt="me" onClick={this.toggleImage } />
-                </div>
-                <div className="arrow-down wow animate__animated animate__zoomInUp" data-wow-delay="0.2s">
+                </AnimateOnScroll>
+                <AnimateOnScroll animation="zoomInUp" delay="0.2s" className="arrow-down">
                   <a href="#qui-suis-je">
                     <img src={arrow_down} alt="down" />
                   </a>
-                </div>
-              </div>
+                </AnimateOnScroll>
+              </AnimateOnScroll>
             </div>
           </div>
         </div>

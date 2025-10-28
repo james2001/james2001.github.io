@@ -2,6 +2,7 @@ import React from "react";
 import contact from "../assets/images/contact.png";
 import arrowUp from "../assets/images/rotated-arrow.png";
 import { withTranslation } from "react-i18next";
+import AnimateOnScroll from "./common/AnimateOnScroll";
 
 const initialState = { message: "", email: "", name: "", subject: "" };
 class Contacts extends React.Component {
@@ -52,18 +53,12 @@ class Contacts extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <div
-                className="section-title wow animate__animated animate__fadeInUp"
-                data-wow-delay="0.1s"
-              >
+              <AnimateOnScroll animation="fadeInUp" delay="0.1s" className="section-title">
                 <h2>{t("title.contact")}</h2>
-              </div>
+              </AnimateOnScroll>
             </div>
             <div className="col-12">
-              <div
-                className="contact-wraper wow animate__animated animate__fadeInUp"
-                data-wow-delay="0.3s"
-              >
+              <AnimateOnScroll animation="fadeInUp" delay="0.3s" className="contact-wraper">
                 <form onSubmit={this.handleSubmit}>
                   <div className="input-box">
                     <input
@@ -100,14 +95,11 @@ class Contacts extends React.Component {
                     value={this.state.message}
                     onChange={(event) => this.handleChange(event)}
                   ></textarea>
-                  <div
-                    className="form-btn wow animate__animated animate__fadeInUp"
-                    data-wow-delay="0.1s"
-                  >
+                  <AnimateOnScroll animation="fadeInUp" delay="0.1s" className="form-btn">
                     <button type="submit">Envoyer</button>
-                  </div>
+                  </AnimateOnScroll>
                 </form>
-              </div>
+              </AnimateOnScroll>
             </div>
           </div>
           <div className="mailbox-image">

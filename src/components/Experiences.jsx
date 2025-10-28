@@ -3,6 +3,7 @@ import tree from "../assets/images/tree.png";
 import ExpTree from "./common/ExpTree";
 import datas from "../data/experiences.json";
 import { withTranslation } from "react-i18next";
+import AnimateOnScroll from "./common/AnimateOnScroll";
 
 const Experiences = ({ t }) => {
   return (
@@ -10,12 +11,9 @@ const Experiences = ({ t }) => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div
-              className="section-title wow animate__animated animate__fadeInUp"
-              data-wow-delay="0.1s"
-            >
+            <AnimateOnScroll animation="fadeInUp" delay="0.1s" className="section-title">
               <h2>{t("title.experiences")}</h2>
-            </div>
+            </AnimateOnScroll>
           </div>
           <div className="col-12">
             <div className="experiances-main">
