@@ -5,6 +5,7 @@ import github from '../assets/images/github.png';
 import user from '../data/user.json';
 import { withTranslation } from 'react-i18next';
 import i18next from "i18next";
+import ExportPDF from './ExportPDF';
 
 const Header = ({ t }) => {
   const changeLanguage = (lng) => {
@@ -65,6 +66,7 @@ const Header = ({ t }) => {
                 </a>
               </li>
             </ul>
+            <ExportPDF />
           </div>
         </div>
       </nav>

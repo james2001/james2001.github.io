@@ -569,3 +569,53 @@ a.link-twitter {
 .navbar-brand:hover {
   color: $second;
 }
+
+// Export PDF Buttons
+.export-pdf-buttons {
+  display: flex;
+  gap: 8px;
+  margin-left: 15px;
+}
+
+.btn-export-pdf {
+  background-color: $third;
+  color: $second;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  .btn-icon {
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  &:hover:not(:disabled) {
+    background-color: darken($third, 10%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.btn-export-anonymous {
+  background-color: $main;
+  border: 2px solid $third;
+  color: $third;
+
+  &:hover:not(:disabled) {
+    background-color: $third;
+    color: $second;
+  }
+}

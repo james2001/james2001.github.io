@@ -11,5 +11,12 @@
         "part_1": "PHP developer for more than 10 years and Symfony developer since its version 1.3, I had the opportunity to work with large companies (Renault, Accor, My Money Bank, AXA, Cardif, Maif).",
         "part_2": "I accompanied and raised in competence, by my expertise, several tens of developers.",
         "part_3": "I am able to start an application from scratch or to take over an existing one to make it evolve. I can also set up a continuous deployment system."
+    },
+    "export": {
+        "downloadPDF": "Download Resume",
+        "downloadAnonymous": "Anonymous Resume",
+        "normal": "Download full resume",
+        "anonymous": "Download anonymous resume (without name and photo)",
+        "exporting": "Generating..."
     }
 }
