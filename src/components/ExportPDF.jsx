@@ -55,20 +55,18 @@ const ExportPDF = ({ t, i18n }) => {
       <button
         onClick={() => exportToPDF(false)}
         disabled={isExporting}
-        className="btn-export-pdf"
+        className="btn-export-pdf btn-export-icon-only"
         title={t("export.normal")}
       >
-        <span className="btn-icon">📄</span>
-        {isExporting ? "..." : "CV"}
+        {isExporting ? "⏳" : "📄"}
       </button>
       <button
         onClick={() => exportToPDF(true)}
         disabled={isExporting}
-        className="btn-export-pdf btn-export-anonymous"
+        className="btn-export-pdf btn-export-anonymous btn-export-icon-only"
         title={t("export.anonymous")}
       >
-        <span className="btn-icon">🔒</span>
-        {isExporting ? "..." : "Anonyme"}
+        {isExporting ? "⏳" : "🔒"}
       </button>
     </div>
   );
