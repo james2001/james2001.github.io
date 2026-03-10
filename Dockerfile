@@ -1,12 +1,11 @@
-# Node.js version compatible avec React 18
-FROM node:18-alpine
+# Node.js LTS
+FROM node:22-alpine
 
 # Définir le répertoire de travail
 WORKDIR /app
 
 # Copier les fichiers de dépendances
 COPY package*.json ./
-COPY yarn.lock ./
 
 # Installer les dépendances
 RUN npm install

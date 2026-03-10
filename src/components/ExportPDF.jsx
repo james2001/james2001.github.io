@@ -14,7 +14,8 @@ const ExportPDF = ({ t, i18n }) => {
     setIsExporting(true);
 
     try {
-      const currentLang = i18n.language;
+      const baseLang = i18n.language?.substring(0, 2) || "en";
+      const currentLang = ["fr", "en"].includes(baseLang) ? baseLang : "en";
 
       // Générer le document PDF
       const blob = await pdf(

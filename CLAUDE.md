@@ -4,41 +4,33 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a React-based personal portfolio/CV website for a PHP/Symfony developer. The site is built with React 18, Bootstrap 5, Tailwind CSS (PostCSS7 compat), and uses react-i18next for internationalization (French/English). The site is deployed via GitHub Pages.
+This is a React-based personal portfolio/CV website for a PHP/Symfony developer. The site is built with React 19, Bootstrap 5, and uses react-i18next for internationalization (French/English). The site is deployed via GitHub Pages.
 
 ## Development Commands
 
 ### Start Development Server
 ```bash
 npm start
-# or
-yarn start
 ```
-Runs the app in development mode using CRACO (Create React App Configuration Override). Open http://localhost:3000 to view.
+Runs the app in development mode using Vite. Open http://localhost:3000 to view.
 
 ### Build for Production
 ```bash
 npm run build
-# or
-yarn build
 ```
-Creates an optimized production build in the `build/` directory using CRACO.
+Creates an optimized production build in the `build/` directory using Vite.
+
+### Preview Production Build
+```bash
+npm run preview
+```
+Locally preview the production build.
 
 ### Deploy to GitHub Pages
 ```bash
 npm run deploy
-# or
-yarn deploy
 ```
 Deploys the production build to GitHub Pages (gh-pages branch).
-
-### Run Tests
-```bash
-npm test
-# or
-yarn test
-```
-Runs tests in interactive watch mode using CRACO.
 
 ## Docker Development
 
@@ -48,7 +40,7 @@ The project includes Docker configuration for isolated development environment.
 ```bash
 docker compose build
 ```
-Builds the Docker image with Node.js 18 and all dependencies.
+Builds the Docker image with Node.js 22 and all dependencies.
 
 ### Start Development Server with Docker
 ```bash
@@ -62,12 +54,6 @@ docker compose run --rm app npm run build
 ```
 Creates production build inside Docker container.
 
-### Run Tests with Docker
-```bash
-docker compose run --rm app npm test
-```
-Runs tests in Docker container.
-
 ### Run Any npm Command with Docker
 ```bash
 docker compose run --rm app npm <command>
@@ -77,15 +63,16 @@ Execute any npm command inside the Docker environment.
 ## Architecture
 
 ### Build Configuration
-- **CRACO** (craco.config.js): Overrides Create React App configuration to enable Tailwind CSS with PostCSS 7 compatibility
-- **Tailwind CSS**: Uses PostCSS7-compatible version configured via tailwind.config.js with purge settings for production optimization
-- **PostCSS**: Configured through CRACO with Tailwind and Autoprefixer plugins
+- **Vite** (vite.config.js): Fast build tool with React plugin, SCSS support, and output to `build/` directory
+- **SCSS**: Processed natively by Vite with Dart Sass
+- **PostCSS**: Autoprefixer for browser compatibility
 
 ### Internationalization (i18n)
-- **Setup**: i18next initialized in src/index.js with browser language detection
+- **Setup**: i18next initialized in src/index.jsx with browser language detection
 - **Translations**: Located in src/translations/[lang]/common.json (currently supports 'en' and 'fr')
 - **Fallback**: English (en) is the fallback language
-- **Usage**: Components use `withTranslation("common")` HOC and access translations via `t()` function
+- **Language handling**: Always normalize `i18n.language` to base code (e.g., `fr-FR` → `fr`) before using as object key
+- **Usage**: Components use `withTranslation("common")` HOC or `useTranslation()` hook and access translations via `t()` function
 
 ### Data Structure
 All content is data-driven from JSON files in `src/data/`:
@@ -97,7 +84,7 @@ All content is data-driven from JSON files in `src/data/`:
 
 ### Component Organization
 
-**Main Layout** (src/App.js):
+**Main Layout** (src/App.jsx):
 Single-page application with sections rendered in order:
 1. Header (navigation)
 2. Main (hero/intro)
@@ -109,18 +96,21 @@ Single-page application with sections rendered in order:
 8. Contacts
 9. Footer
 
+All components are functional components using React hooks.
+
 **Common Components** (src/components/common/):
 - **ListSkills.jsx**: Renders skill categories with rating dots
 - **RatingDot.jsx**: Visual skill proficiency indicator (dot-based rating system)
 - **ExpTree.jsx**: Timeline entry for work experiences
 - **Formation.jsx**: Training/education entry
 - **Certification.jsx**: Certification entry
+- **AnimateOnScroll.jsx**: Intersection observer wrapper for scroll animations
 
 ### Styling Architecture
 - **SCSS Files**: Main styles in src/style.scss and src/responsive.scss
 - **Color Palette**: Defined in src/_color.scss
-- **Component Styles**: src/App.scss for app-level styles
-- **CSS Framework Mix**: Bootstrap 5 for layout + Tailwind for utilities + custom SCSS
+- **Component Styles**: src/App.scss for app-level styles (imports _color, style, responsive)
+- **CSS Framework**: Bootstrap 5 for layout + custom SCSS
 
 ### Key Patterns
 
@@ -131,7 +121,7 @@ import datas from "../data/skills.json";
 // ...
 {datas.map((skills, key) => (
   <div key={key}>
-    <ListSkills title={skills.category} arr={skills.detail} />
+    <ListSkills title={skills.category[currentLang]} arr={skills.detail} />
   </div>
 ))}
 ```
@@ -157,7 +147,7 @@ To update portfolio content, edit JSON files in `src/data/`:
 
 ## Important Notes
 
-- This project uses CRACO to customize Create React App without ejecting
-- Tailwind CSS uses a PostCSS 7 compatible version due to Create React App constraints
 - The site is configured for GitHub Pages deployment (homepage set to https://stephane.rathgeber.alsace)
 - All user-facing text should be added to both English and French translation files to maintain bilingual support
+- Entry point is `index.html` at root (Vite convention), not in `public/`
+- Static assets (favicons, CNAME, robots.txt, sitemap.xml) are in `public/` and copied as-is to build

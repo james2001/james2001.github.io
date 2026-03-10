@@ -161,8 +161,9 @@ const formatDate = (startDate, endDate, lang) => {
   const [startYear, startMonth] = startDate.split('-');
   const [endYear, endMonth] = endDate.split('-');
 
-  const startMonthName = months[lang][parseInt(startMonth) - 1];
-  const endMonthName = months[lang][parseInt(endMonth) - 1];
+  const monthNames = months[lang] || months.en;
+  const startMonthName = monthNames[parseInt(startMonth) - 1];
+  const endMonthName = monthNames[parseInt(endMonth) - 1];
 
   return `${startMonthName} ${startYear} - ${endMonthName} ${endYear}`;
 };

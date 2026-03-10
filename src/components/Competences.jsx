@@ -6,7 +6,8 @@ import { withTranslation } from "react-i18next";
 import AnimateOnScroll from "./common/AnimateOnScroll";
 
 const Competences = ({ t, i18n }) => {
-  const currentLang = i18n.language;
+  const baseLang = i18n.language?.substring(0, 2) || "en";
+  const currentLang = ["fr", "en"].includes(baseLang) ? baseLang : "en";
 
   // Organisation des compétences en 3 colonnes
   const column1 = ["Soft Skills", currentLang === "fr" ? "Langages" : "Languages"];

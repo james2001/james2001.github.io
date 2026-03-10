@@ -598,7 +598,7 @@ a.link-twitter {
   }
 
   &:hover:not(:disabled) {
-    background-color: darken($third, 10%);
+    background-color: color-mix(in srgb, $third 90%, black);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
