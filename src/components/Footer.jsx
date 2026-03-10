@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import instagram from "../assets/images/instagram.svg";
 import facebook from "../assets/images/facebook.svg";
 import twitter from "../assets/images/twitter.svg";
@@ -6,11 +6,20 @@ import malt from "../assets/images/malt.svg";
 import linkedin from "../assets/images/linkedin.svg";
 import user from "../data/user.json";
 import AnimateOnScroll from "./common/AnimateOnScroll";
-import { WebsiteCarbonBadge } from "react-websitecarbon-badge";
 
+const WebsiteCarbonBadge = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://unpkg.com/website-carbon-badges@1.1.5/b.min.js";
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => document.body.removeChild(script);
+  }, []);
+
+  return <div id="wcb" className="carbonbadge wcb-d"></div>;
+};
 
 const Footer = () => {
-  
   return (
     <section id="footer">
       <div className="container">
@@ -41,7 +50,7 @@ const Footer = () => {
           </div>
           <div className="col-12">
             <AnimateOnScroll animation="fadeInUp" delay="0.5s" className="website-carbon-badge">
-              <WebsiteCarbonBadge url="https://stephane.rathgeber.alsace/" />
+              <WebsiteCarbonBadge />
             </AnimateOnScroll>
           </div>
         </div>
