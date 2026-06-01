@@ -1,6 +1,34 @@
 [
    {
       "role": {
+         "en": "Tech Lead",
+         "fr": "Tech Lead"
+      },
+      "startDate": "2025-11",
+      "endDate": "2026-06",
+      "location": "Paris, France",
+      "company": "Japan Experience",
+      "explanation": {
+         "en": "Optimization of the customer journey in close collaboration with the Product Owner. Technical audit and analysis of the existing system, optimization recommendations and Symfony version upgrade. Technical support for the team: implementation of best practices, code reviews and developer skill development. Tech stack: Symfony 7, GitLab, Google Cloud.",
+         "fr": "Optimisation du parcours client en collaboration étroite avec le Product Owner. Audit et analyse technique de l'existant, recommandations d'optimisation et montée de version Symfony. Accompagnement technique de l'équipe : mise en place de bonnes pratiques, revues de code et montée en compétences des développeurs. Stack technique : Symfony 7, GitLab, Google Cloud."
+      }
+   },
+   {
+      "role": {
+         "en": "Fractional CTO / Symfony Developer",
+         "fr": "CTO à temps partagé / Développeur Symfony"
+      },
+      "startDate": "2025-05",
+      "endDate": "present",
+      "location": "Puteaux, France",
+      "company": "France Care",
+      "explanation": {
+         "en": "Technical leadership of the project and implementation of a complete patient follow-up back-office, GDPR and HDS compliant. Fractional CTO role, with business challenge work: needs framing, technical trade-offs, prioritization and team support. Integrations delivered: Eloquant for call tracking and history, HubSpot and Yousign for case management and signatures, Stripe for patient subscription and billing. Focus on security, code quality, flow reliability and automation in a healthcare environment with strong regulatory constraints. Tech stack: Symfony 7, Stripe, HubSpot, HDS, Scalingo.",
+         "fr": "Pilotage technique du projet et mise en place d'un back-office complet de suivi patient, conforme RGPD et HDS. Rôle de CTO à temps partagé, avec un travail de challenge métier : cadrage des besoins, arbitrages techniques, priorisation et accompagnement des équipes. Intégrations réalisées : Eloquant pour le suivi et l'historique des appels, HubSpot et Yousign pour la gestion des dossiers et signatures, Stripe pour la souscription et la facturation des patients. Focus sur la sécurité, la qualité du code, la fiabilité des flux et l'automatisation dans un environnement santé avec fortes contraintes réglementaires. Stack technique : Symfony 7, Stripe, HubSpot, HDS, Scalingo."
+      }
+   },
+   {
+      "role": {
          "en": "Symfony Developer / Tech Lead",
          "fr": "Développeur Symfony / Lead Tech"
       },

@@ -12,11 +12,16 @@ const formatDate = (startDate, endDate, lang) => {
 
   const baseLang = lang?.substring(0, 2) || "en";
   const monthNames = months[baseLang] || months.en;
+  const present = { fr: "Aujourd'hui", en: "Present" };
 
   const [startYear, startMonth] = startDate.split("-");
-  const [endYear, endMonth] = endDate.split("-");
-
   const startMonthName = monthNames[parseInt(startMonth) - 1];
+
+  if (endDate === "present") {
+    return `${startMonthName} ${startYear} - ${present[baseLang] || present.en}`;
+  }
+
+  const [endYear, endMonth] = endDate.split("-");
   const endMonthName = monthNames[parseInt(endMonth) - 1];
 
   return `${startMonthName} ${startYear} - ${endMonthName} ${endYear}`;
