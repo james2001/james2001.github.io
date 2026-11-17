@@ -1,0 +1,131 @@
+# Stéphane Rathgeber — Tech Lead Symfony
+
+> Développeur PHP depuis plus de 10 ans et développeur Symfony depuis sa version 1.3, j'ai eu l'occasion de travailler avec de grandes sociétés (Renault, Accor, My Money Bank, AXA, Cardif, Maif). J'ai accompagné et fait monter en compétence, par mon expertise, plusieurs dizaines de développeurs. Je suis capable de commencer une application "from scratch" ou  d'en reprendre une existante pour la faire évoluer. Je peux également mettre en place un système de déploiement continu.
+
+- **Site** : https://stephane.rathgeber.alsace/
+- **Expérience** : depuis 2008 (18 ans)
+- **Missions en cours** : France Care (CTO à temps partagé / Développeur Symfony), GDB Consulting (Développeur Symfony / Lead Tech)
+- **Contact** : [formulaire de contact](https://stephane.rathgeber.alsace/#contact)
+- **Profils** : [LinkedIn](https://www.linkedin.com/in/stephane-rathgeber/) · [Malt](https://www.malt.fr/profile/stephanerathgeber) · [GitHub](https://github.com/james2001) · [Twitter](https://twitter.com/DeveloppeurFree)
+- **Autres formats** : [English version](https://stephane.rathgeber.alsace/cv.en.md) · [JSON Resume](https://stephane.rathgeber.alsace/cv.fr.json) · [llms.txt](https://stephane.rathgeber.alsace/llms.txt)
+
+## Compétences
+
+Niveau indiqué sur une échelle de 1 à 4.
+
+- **Soft Skills** : Leadership Technique (4/4), Vision Stratégique (4/4), Mentorat d'Équipe (4/4), Communication (4/4), Gestion de Projet (4/4)
+- **Langages** : PHP (4/4), JavaScript (3/4), HTML (4/4), CSS (3/4), Java (2/4), SQL (3/4)
+- **Bases de données** : MySQL (3/4), MongoDB (1/4), Elasticsearch (1/4), Meilisearch (1/4)
+- **Architecture** : REST (4/4), API (4/4), Microservices (3/4), Event-Driven (3/4), CQRS (2/4)
+- **Frameworks** : Symfony (4/4), Jquery (3/4), Bootstrap (2/4), React (2/4)
+- **Contrôle de version** : Git (4/4), GitHub (3/4), Gitlab (3/4)
+- **DevOps** : Docker (3/4), CI/CD (3/4), Kubernetes (2/4)
+
+## Expériences
+
+### Tech Lead — Japan Experience
+
+*2025-11 → 2026-06 · 8 mois · Paris, France*
+
+Optimisation du parcours client en collaboration étroite avec le Product Owner. Audit et analyse technique de l'existant, recommandations d'optimisation et montée de version Symfony. Accompagnement technique de l'équipe : mise en place de bonnes pratiques, revues de code et montée en compétences des développeurs. Stack technique : Symfony 7, GitLab, Google Cloud.
+
+### CTO à temps partagé / Développeur Symfony — France Care
+
+*2025-05 → aujourd'hui · 1 an 7 mois · Puteaux, France*
+
+Pilotage technique du projet et mise en place d'un back-office complet de suivi patient, conforme RGPD et HDS. Rôle de CTO à temps partagé, avec un travail de challenge métier : cadrage des besoins, arbitrages techniques, priorisation et accompagnement des équipes. Intégrations réalisées : Eloquant pour le suivi et l'historique des appels, HubSpot et Yousign pour la gestion des dossiers et signatures, Stripe pour la souscription et la facturation des patients. Pilotage de la migration d'infrastructure vers Scalingo / Clever Cloud, audit et renforcement de la sécurité applicative (authentification), et mise en place d'un nouveau portail de souscription et de paiement. Focus sur la sécurité, la qualité du code, la fiabilité des flux et l'automatisation dans un environnement santé avec fortes contraintes réglementaires (HDS, ISO 27001). Stack technique : Symfony 7, Stripe, HubSpot, HDS, Scalingo.
+
+### Développeur Symfony / Lead Tech — GDB Consulting
+
+*2024-11 → aujourd'hui · 2 ans 1 mois · Puteaux, France*
+
+Conception et développement d'un CRM sur mesure pour un courtier en énergie (électricité / gaz) : gestion des clients, contacts et contrats (points de livraison PDL/PCE), documents typés, segments et tableau de bord, avec import/export Excel. En 2026, ouverture du CRM à l'IA : intégration d'un connecteur MCP avec Claude, travaux de pricing et de comparatif multi-fournisseurs via API, et expérimentation d'assistance vocale. Réalisé via Kiora, avec autonomie sur les choix techniques et architecturaux. Stack technique : Symfony 8, MySQL, stockage S3 (MinIO), Docker.
+
+### Développeur Symfony / Lead Tech — Digdeo
+
+*2023-01 → 2025-07 · 2 ans 7 mois · Chatou, France*
+
+Développement d'une solution de veille technologique visant à cartographier l'intégralité d'Internet pour identifier les hébergeurs de sites web. Architecture et implémentation d'une infrastructure capable de gérer des volumes massifs de données (BigData) avec Symfony, API Platform, RabbitMQ, MariaDB et Meilisearch. Optimisation continue des performances pour indexer et rechercher des milliards de données en temps réel. Collaboration étroite avec Kiora pour la réussite du projet, avec autonomie dans les choix techniques et architecturaux.
+
+### Développeur Symfony 7 — Safran Electronics & Defense
+
+*2023-11 → 2024-11 · 1 an 1 mois · Puteaux, France*
+
+Suite à la reprise d'un projet back-office chez Safran Optronique, je me suis chargé de faire évoluer une application existante tout en prenant en compte les défis d'une passation technique très limitée. Mon rôle principal a consisté à redéfinir l'architecture et la fonctionnalité de l'outil, tout en assurant la sécurité, un enjeu primordial dans ce secteur. Prise en charge d'un projet existant avec peu voire pas de transfert de connaissances détaillé. Intégration d'améliorations pour une meilleure scalabilité et maintenabilité du produit, tout en assurant des mises à jour régulières sans rupture de service.
+
+### Développeur Sylius — Brico Brico
+
+*2023-04 → 2023-09 · 6 mois · Puteaux, France*
+
+Au cours de ma collaboration avec Louis et son équipe, j'ai été impliqué dans diverses tâches techniques pour améliorer leur projet Sylius. Parmi les réalisations notables, j'ai géré l'intégration d'Axeptio en utilisant Google Tag Manager (GTM) et le Facebook Pixel pour optimiser la gestion des consentements et le suivi des utilisateurs. J'ai également intégré plusieurs éléments à leur projet, contribuant ainsi à enrichir et améliorer l'expérience utilisateur.
+
+### Dev Ops — relevanC
+
+*2023-01 → 2023-03 · 3 mois · Paris, France*
+
+Audit du code de l'application avec rédaction d'un rapport et mise en place de monitoring. Optimisation de routes sur l'API
+
+### Lead Dev — MeilleurTaux
+
+*2021-07 → 2022-09 · 1 an 3 mois · Paris, France*
+
+Construction d'un tunnel de souscription en assurance vie / PER
+
+### Développeur Sylius — Onatera
+
+*2021-09 → 2022-06 · 10 mois · Aix-en-Provence, France*
+
+Création d'une plateforme de vente en ligne multilingue. Ajout de spécificité du client sur Sylius
+
+### Developeur Symfony/API — Yousign
+
+*2021-05 → 2021-09 · 5 mois · Paris, France*
+
+Mise en place d'un Traking d'utilisateurs avec l'outils Segment. Evolution sur la signature avancée, meilleure gestion d'erreurs, améliorations du suivi (notifications par e-mail)
+
+### Expert API Platform — Assoconnect
+
+*2021-02 → 2021-04 · 3 mois · Paris, France*
+
+Exposition de nouvelles ressources sur l'API existante avec une synchronisation des données legacy. Le but étant de migrer le projet sur une structure API / React et quitter le code legacy
+
+### Développeur Symfony — ekWateur
+
+*2020-08 → 2021-02 · 7 mois · Paris, France*
+
+Mise en place des appels API vers un nouveau WS Rest en vue d'une migration (avec feature flag). Audit sur la qualité de code. Mise en place d'outils de contrôle qualité
+
+### Développeur Symfony — Dimension 4
+
+*2020-03 → 2020-03 · 1 mois · Paris, France*
+
+Mise en place de deux connecteurs à des Web Service, un en XML RPC et l'autre en REST. J'ai développé un composant et un Bundle pour le second.
+
+### Team Lead/Lead Dev — Manymore
+
+*2014-07 → 2020-07 · 6 ans 1 mois · Puteaux, France*
+
+Mise en place de solutions de dématérialisation des actes de gestion d'assurance vie pour AXA et Cardif. Réalisation d'un extranet pour la visualisation des contrats / clients et commissions.
+
+### Développeur Symfony — Orca Formation
+
+*2008-11 → 2014-06 · 5 ans 8 mois · La Garenne-Colombes, France*
+
+Création de l'application de gestion des ventes et des commissions sur les véhicules pour Renault. Application utilisée par tout le réseau Renault France. Simulateur de crédit/LOA avec gestion des barèmes pour My Money Bank.
+
+## Formation
+
+- BTS IRIS — Lycée Blaise Pascal (2003 - 2005)
+- BAC STI Génie Électrotechnique — Lycée Louis Marchal (2000 - 2003)
+
+## Certifications
+
+- Optimisez votre déploiement en créant des conteneurs docker (2019)
+- Prenez en main Bootstrap (2015)
+- Apprenez a créer votre site web avec HTML5 et CSS3 (2014)
+- Gérez votre code avec Git et Github (2014)
+- Intégrateur web (2014)
+
+---
+
+Généré le 2026-11-17 · https://stephane.rathgeber.alsace/

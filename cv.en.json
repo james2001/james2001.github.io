@@ -1,0 +1,401 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Stéphane Rathgeber",
+    "label": "Tech Lead Symfony",
+    "image": "https://pbs.twimg.com/profile_images/1434479260530532352/70I0DiYl_400x400.jpg",
+    "url": "https://stephane.rathgeber.alsace/",
+    "summary": "PHP developer for more than 10 years and Symfony developer since its version 1.3, I had the opportunity to work with large companies (Renault, Accor, My Money Bank, AXA, Cardif, Maif). I accompanied and raised in competence, by my expertise, several tens of developers. I am able to start an application from scratch or to take over an existing one to make it evolve. I can also set up a continuous deployment system.",
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/stephane-rathgeber/"
+      },
+      {
+        "network": "Malt",
+        "url": "https://www.malt.fr/profile/stephanerathgeber"
+      },
+      {
+        "network": "GitHub",
+        "url": "https://github.com/james2001"
+      },
+      {
+        "network": "Twitter",
+        "url": "https://twitter.com/DeveloppeurFree"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Japan Experience",
+      "position": "Tech Lead",
+      "location": "Paris, France",
+      "startDate": "2025-11",
+      "endDate": "2026-06",
+      "summary": "Optimization of the customer journey in close collaboration with the Product Owner. Technical audit and analysis of the existing system, optimization recommendations and Symfony version upgrade. Technical support for the team: implementation of best practices, code reviews and developer skill development. Tech stack: Symfony 7, GitLab, Google Cloud."
+    },
+    {
+      "name": "France Care",
+      "position": "Fractional CTO / Symfony Developer",
+      "location": "Puteaux, France",
+      "startDate": "2025-05",
+      "summary": "Technical leadership of the project and implementation of a complete patient follow-up back-office, GDPR and HDS compliant. Fractional CTO role, with business challenge work: needs framing, technical trade-offs, prioritization and team support. Integrations delivered: Eloquant for call tracking and history, HubSpot and Yousign for case management and signatures, Stripe for patient subscription and billing. Led the infrastructure migration to Scalingo / Clever Cloud, audited and hardened application security (authentication), and set up a new subscription and payment portal. Focus on security, code quality, flow reliability and automation in a healthcare environment with strong regulatory constraints (HDS, ISO 27001). Tech stack: Symfony 7, Stripe, HubSpot, HDS, Scalingo."
+    },
+    {
+      "name": "GDB Consulting",
+      "position": "Symfony Developer / Tech Lead",
+      "location": "Puteaux, France",
+      "startDate": "2024-11",
+      "summary": "Design and development of a custom CRM for an energy broker (electricity / gas): management of clients, contacts and contracts (PDL/PCE delivery points), typed documents, segments and dashboard, with Excel import/export. In 2026, opening the CRM to AI: integration of an MCP connector with Claude, multi-supplier pricing and comparison work via API, and voice-assistant experimentation. Delivered through Kiora with autonomy over technical and architectural choices. Tech stack: Symfony 8, MySQL, S3 storage (MinIO), Docker."
+    },
+    {
+      "name": "Digdeo",
+      "position": "Symfony Developer / Tech Lead",
+      "location": "Chatou, France",
+      "startDate": "2023-01",
+      "endDate": "2025-07",
+      "summary": "Development of a technological monitoring solution aimed at mapping the entire Internet to identify website hosts. Architecture and implementation of infrastructure capable of handling massive data volumes (BigData) with Symfony, API Platform, RabbitMQ, MariaDB and Meilisearch. Continuous performance optimization to index and search billions of data in real time. Close collaboration with Kiora for project success, with autonomy in technical and architectural choices."
+    },
+    {
+      "name": "Safran Electronics & Defense",
+      "position": "Symfony 7 Developer",
+      "location": "Puteaux, France",
+      "startDate": "2023-11",
+      "endDate": "2024-11",
+      "summary": "Following the takeover of a back-office project at Safran Optronique, I was responsible for evolving an existing application while taking into account the challenges of very limited technical handover. My main role consisted of redefining the architecture and functionality of the tool, while ensuring security, a primary concern in this sector. Took over an existing project with little to no detailed knowledge transfer. Integration of improvements for better scalability and maintainability of the product, while ensuring regular updates without service interruption."
+    },
+    {
+      "name": "Brico Brico",
+      "position": "Sylius Developer",
+      "location": "Puteaux, France",
+      "startDate": "2023-04",
+      "endDate": "2023-09",
+      "summary": "During my collaboration with Louis and his team, I was involved in various technical tasks to improve their Sylius project. Among the notable achievements, I managed the integration of Axeptio using Google Tag Manager (GTM) and Facebook Pixel to optimize consent management and user tracking. I also integrated several elements into their project, thus contributing to enriching and improving the user experience."
+    },
+    {
+      "name": "relevanC",
+      "position": "DevOps",
+      "location": "Paris, France",
+      "startDate": "2023-01",
+      "endDate": "2023-03",
+      "summary": "Application code audit with report writing and monitoring setup. API route optimization."
+    },
+    {
+      "name": "MeilleurTaux",
+      "position": "Lead Dev",
+      "location": "Paris, France",
+      "startDate": "2021-07",
+      "endDate": "2022-09",
+      "summary": "Building a subscription funnel for life insurance / PER."
+    },
+    {
+      "name": "Onatera",
+      "position": "Sylius Developer",
+      "location": "Aix-en-Provence, France",
+      "startDate": "2021-09",
+      "endDate": "2022-06",
+      "summary": "Creation of a multilingual online sales platform. Adding client-specific features on Sylius."
+    },
+    {
+      "name": "Yousign",
+      "position": "Symfony/API Developer",
+      "location": "Paris, France",
+      "startDate": "2021-05",
+      "endDate": "2021-09",
+      "summary": "Implementation of user tracking with Segment tool. Evolution on advanced signature, better error management, tracking improvements (email notifications)."
+    },
+    {
+      "name": "Assoconnect",
+      "position": "API Platform Expert",
+      "location": "Paris, France",
+      "startDate": "2021-02",
+      "endDate": "2021-04",
+      "summary": "Exposure of new resources on the existing API with legacy data synchronization. The goal being to migrate the project to an API / React structure and leave the legacy code."
+    },
+    {
+      "name": "ekWateur",
+      "position": "Symfony Developer",
+      "location": "Paris, France",
+      "startDate": "2020-08",
+      "endDate": "2021-02",
+      "summary": "Implementation of API calls to a new REST WS for migration (with feature flag). Code quality audit. Implementation of quality control tools."
+    },
+    {
+      "name": "Dimension 4",
+      "position": "Symfony Developer",
+      "location": "Paris, France",
+      "startDate": "2020-03",
+      "endDate": "2020-03",
+      "summary": "Implementation of two Web Service connectors, one in XML RPC and the other in REST. I developed a component and a Bundle for the second one."
+    },
+    {
+      "name": "Manymore",
+      "position": "Team Lead/Lead Dev",
+      "location": "Puteaux, France",
+      "startDate": "2014-07",
+      "endDate": "2020-07",
+      "summary": "Implementation of life insurance management act dematerialization solutions for AXA and Cardif. Creation of an extranet for contracts/clients and commissions visualization."
+    },
+    {
+      "name": "Orca Formation",
+      "position": "Symfony Developer",
+      "location": "La Garenne-Colombes, France",
+      "startDate": "2008-11",
+      "endDate": "2014-06",
+      "summary": "Creation of the sales and commission management application for Renault vehicles. Application used by the entire Renault France network. Credit/LOA simulator with rate management for My Money Bank."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Lycée Blaise Pascal",
+      "studyType": "BTS IRIS",
+      "startDate": "2003",
+      "endDate": "2005"
+    },
+    {
+      "institution": "Lycée Louis Marchal",
+      "studyType": "BAC STI Génie Électrotechnique",
+      "startDate": "2000",
+      "endDate": "2003"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Optimize your deployment by creating Docker containers",
+      "date": "2019"
+    },
+    {
+      "name": "Master Bootstrap",
+      "date": "2015"
+    },
+    {
+      "name": "Learn to create your website with HTML5 and CSS3",
+      "date": "2014"
+    },
+    {
+      "name": "Manage your code with Git and Github",
+      "date": "2014"
+    },
+    {
+      "name": "Web Integrator",
+      "date": "2014"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Technical Leadership",
+      "level": "4/4",
+      "keywords": [
+        "Soft Skills"
+      ]
+    },
+    {
+      "name": "Strategic Vision",
+      "level": "4/4",
+      "keywords": [
+        "Soft Skills"
+      ]
+    },
+    {
+      "name": "Team Mentoring",
+      "level": "4/4",
+      "keywords": [
+        "Soft Skills"
+      ]
+    },
+    {
+      "name": "Communication",
+      "level": "4/4",
+      "keywords": [
+        "Soft Skills"
+      ]
+    },
+    {
+      "name": "Project Management",
+      "level": "4/4",
+      "keywords": [
+        "Soft Skills"
+      ]
+    },
+    {
+      "name": "PHP",
+      "level": "4/4",
+      "keywords": [
+        "Languages"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "3/4",
+      "keywords": [
+        "Languages"
+      ]
+    },
+    {
+      "name": "HTML",
+      "level": "4/4",
+      "keywords": [
+        "Languages"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "3/4",
+      "keywords": [
+        "Languages"
+      ]
+    },
+    {
+      "name": "Java",
+      "level": "2/4",
+      "keywords": [
+        "Languages"
+      ]
+    },
+    {
+      "name": "SQL",
+      "level": "3/4",
+      "keywords": [
+        "Languages"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "3/4",
+      "keywords": [
+        "Databases"
+      ]
+    },
+    {
+      "name": "MongoDB",
+      "level": "1/4",
+      "keywords": [
+        "Databases"
+      ]
+    },
+    {
+      "name": "Elasticsearch",
+      "level": "1/4",
+      "keywords": [
+        "Databases"
+      ]
+    },
+    {
+      "name": "Meilisearch",
+      "level": "1/4",
+      "keywords": [
+        "Databases"
+      ]
+    },
+    {
+      "name": "REST",
+      "level": "4/4",
+      "keywords": [
+        "Architecture"
+      ]
+    },
+    {
+      "name": "API",
+      "level": "4/4",
+      "keywords": [
+        "Architecture"
+      ]
+    },
+    {
+      "name": "Microservices",
+      "level": "3/4",
+      "keywords": [
+        "Architecture"
+      ]
+    },
+    {
+      "name": "Event-Driven",
+      "level": "3/4",
+      "keywords": [
+        "Architecture"
+      ]
+    },
+    {
+      "name": "CQRS",
+      "level": "2/4",
+      "keywords": [
+        "Architecture"
+      ]
+    },
+    {
+      "name": "Symfony",
+      "level": "4/4",
+      "keywords": [
+        "Frameworks"
+      ]
+    },
+    {
+      "name": "Jquery",
+      "level": "3/4",
+      "keywords": [
+        "Frameworks"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "level": "2/4",
+      "keywords": [
+        "Frameworks"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "2/4",
+      "keywords": [
+        "Frameworks"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "4/4",
+      "keywords": [
+        "Version Control"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "3/4",
+      "keywords": [
+        "Version Control"
+      ]
+    },
+    {
+      "name": "Gitlab",
+      "level": "3/4",
+      "keywords": [
+        "Version Control"
+      ]
+    },
+    {
+      "name": "Docker",
+      "level": "3/4",
+      "keywords": [
+        "DevOps"
+      ]
+    },
+    {
+      "name": "CI/CD",
+      "level": "3/4",
+      "keywords": [
+        "DevOps"
+      ]
+    },
+    {
+      "name": "Kubernetes",
+      "level": "2/4",
+      "keywords": [
+        "DevOps"
+      ]
+    }
+  ],
+  "meta": {
+    "canonical": "https://stephane.rathgeber.alsace/cv.en.json",
+    "lastModified": "2026-11-17T18:11:50",
+    "language": "en"
+  }
+}
