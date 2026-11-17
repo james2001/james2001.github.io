@@ -23,8 +23,22 @@
       "location": "Puteaux, France",
       "company": "France Care",
       "explanation": {
-         "en": "Technical leadership of the project and implementation of a complete patient follow-up back-office, GDPR and HDS compliant. Fractional CTO role, with business challenge work: needs framing, technical trade-offs, prioritization and team support. Integrations delivered: Eloquant for call tracking and history, HubSpot and Yousign for case management and signatures, Stripe for patient subscription and billing. Focus on security, code quality, flow reliability and automation in a healthcare environment with strong regulatory constraints. Tech stack: Symfony 7, Stripe, HubSpot, HDS, Scalingo.",
-         "fr": "Pilotage technique du projet et mise en place d'un back-office complet de suivi patient, conforme RGPD et HDS. Rôle de CTO à temps partagé, avec un travail de challenge métier : cadrage des besoins, arbitrages techniques, priorisation et accompagnement des équipes. Intégrations réalisées : Eloquant pour le suivi et l'historique des appels, HubSpot et Yousign pour la gestion des dossiers et signatures, Stripe pour la souscription et la facturation des patients. Focus sur la sécurité, la qualité du code, la fiabilité des flux et l'automatisation dans un environnement santé avec fortes contraintes réglementaires. Stack technique : Symfony 7, Stripe, HubSpot, HDS, Scalingo."
+         "en": "Technical leadership of the project and implementation of a complete patient follow-up back-office, GDPR and HDS compliant. Fractional CTO role, with business challenge work: needs framing, technical trade-offs, prioritization and team support. Integrations delivered: Eloquant for call tracking and history, HubSpot and Yousign for case management and signatures, Stripe for patient subscription and billing. Led the infrastructure migration to Scalingo / Clever Cloud, audited and hardened application security (authentication), and set up a new subscription and payment portal. Focus on security, code quality, flow reliability and automation in a healthcare environment with strong regulatory constraints (HDS, ISO 27001). Tech stack: Symfony 7, Stripe, HubSpot, HDS, Scalingo.",
+         "fr": "Pilotage technique du projet et mise en place d'un back-office complet de suivi patient, conforme RGPD et HDS. Rôle de CTO à temps partagé, avec un travail de challenge métier : cadrage des besoins, arbitrages techniques, priorisation et accompagnement des équipes. Intégrations réalisées : Eloquant pour le suivi et l'historique des appels, HubSpot et Yousign pour la gestion des dossiers et signatures, Stripe pour la souscription et la facturation des patients. Pilotage de la migration d'infrastructure vers Scalingo / Clever Cloud, audit et renforcement de la sécurité applicative (authentification), et mise en place d'un nouveau portail de souscription et de paiement. Focus sur la sécurité, la qualité du code, la fiabilité des flux et l'automatisation dans un environnement santé avec fortes contraintes réglementaires (HDS, ISO 27001). Stack technique : Symfony 7, Stripe, HubSpot, HDS, Scalingo."
+      }
+   },
+   {
+      "role": {
+         "en": "Symfony Developer / Tech Lead",
+         "fr": "Développeur Symfony / Lead Tech"
+      },
+      "startDate": "2024-11",
+      "endDate": "present",
+      "location": "Puteaux, France",
+      "company": "GDB Consulting",
+      "explanation": {
+         "en": "Design and development of a custom CRM for an energy broker (electricity / gas): management of clients, contacts and contracts (PDL/PCE delivery points), typed documents, segments and dashboard, with Excel import/export. In 2026, opening the CRM to AI: integration of an MCP connector with Claude, multi-supplier pricing and comparison work via API, and voice-assistant experimentation. Delivered through Kiora with autonomy over technical and architectural choices. Tech stack: Symfony 8, MySQL, S3 storage (MinIO), Docker.",
+         "fr": "Conception et développement d'un CRM sur mesure pour un courtier en énergie (électricité / gaz) : gestion des clients, contacts et contrats (points de livraison PDL/PCE), documents typés, segments et tableau de bord, avec import/export Excel. En 2026, ouverture du CRM à l'IA : intégration d'un connecteur MCP avec Claude, travaux de pricing et de comparatif multi-fournisseurs via API, et expérimentation d'assistance vocale. Réalisé via Kiora, avec autonomie sur les choix techniques et architecturaux. Stack technique : Symfony 8, MySQL, stockage S3 (MinIO), Docker."
       }
    },
    {
