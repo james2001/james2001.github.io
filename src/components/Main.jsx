@@ -3,6 +3,7 @@ import profile2 from "../assets/images/profil-2.png";
 import arrow_down from "../assets/images/curly-arrow.png";
 import user from "../data/user.json";
 import AnimateOnScroll from "./common/AnimateOnScroll";
+import { useTranslation } from "react-i18next";
 
 const imagesPath = {
   smile: user.picture,
@@ -10,6 +11,9 @@ const imagesPath = {
 }
 
 const Main = () => {
+  const { i18n } = useTranslation();
+  const baseLang = i18n.language?.substring(0, 2) || "en";
+  const currentLang = ["fr", "en"].includes(baseLang) ? baseLang : "en";
   const [smile, setSmile] = useState(true);
 
   const toggleImage = () => setSmile(prev => !prev);
@@ -22,7 +26,7 @@ const Main = () => {
           <div className="col-12">
             <AnimateOnScroll animation="zoomInUp" delay="0s" className="header-content-wraper">
               <h1>{user.name}</h1>
-              <h5>Tech Lead Symfony</h5>
+              <h5>{user.headline[currentLang]}</h5>
               <AnimateOnScroll animation="zoomInUp" delay="0.1s" className="profile-photo">
                 <img src={imagesPath[imageName]} alt="me" onClick={toggleImage} />
               </AnimateOnScroll>

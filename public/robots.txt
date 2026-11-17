@@ -2,4 +2,6 @@
 User-agent: *
 Disallow:
 
+# CV lisible par les agents IA : https://stephane.rathgeber.alsace/llms.txt
+
 Sitemap: https://stephane.rathgeber.alsace/sitemap.xml
