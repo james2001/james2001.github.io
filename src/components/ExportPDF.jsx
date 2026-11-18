@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { pdf } from "@react-pdf/renderer";
 import { withTranslation } from "react-i18next";
-import CVDocument from "./CVDocument";
 import userData from "../data/user.json";
 import skillsData from "../data/skills.json";
 import experiencesData from "../data/experiences.json";
 import certificationsData from "../data/certifications.json";
+import formationsData from "../data/formations.json";
 
 const ExportPDF = ({ t, i18n }) => {
   const [isExporting, setIsExporting] = useState(false);
@@ -17,6 +16,14 @@ const ExportPDF = ({ t, i18n }) => {
       const baseLang = i18n.language?.substring(0, 2) || "en";
       const currentLang = ["fr", "en"].includes(baseLang) ? baseLang : "en";
 
+      // La librairie PDF (~1 Mo) n'est chargée qu'au clic, pas avec la page.
+      const [{ pdf }, { default: CVDocument }] = await Promise.all([
+        import("@react-pdf/renderer"),
+        import("./CVDocument"),
+      ]);
+      const tLang = i18n.getFixedT(currentLang, "common");
+      const summary = ["about.part_1", "about.part_2", "about.part_3"].map((key) => tLang(key)).join(" ");
+
       // Générer le document PDF
       const blob = await pdf(
         <CVDocument
@@ -24,6 +31,8 @@ const ExportPDF = ({ t, i18n }) => {
           skillsData={skillsData}
           experiencesData={experiencesData}
           certificationsData={certificationsData}
+          formationsData={formationsData}
+          summary={summary}
           lang={currentLang}
           anonymous={anonymous}
         />

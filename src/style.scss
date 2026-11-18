@@ -48,7 +48,17 @@ section#header {
   filter: brightness(1); 
 }
 .flag-button:hover {
-  filter: brightness(1.5); 
+  filter: brightness(1.5);
+}
+// Le menu mobile ouvert doit passer au-dessus du bandeau « Fork me on GitHub » (z-index 1100).
+.mobile-menu-wraper {
+  z-index: 1200;
+}
+.flag-icon {
+  display: block;
+  width: 30px;
+  height: 20px;
+  object-fit: cover;
 }
 a.navbar-brand {
   font-size: 26px;
@@ -297,6 +307,31 @@ section#competences {
   }
   text-align: left;
   padding-left: 70px;
+  h3:has(+ .experiance-sector) {
+    margin-bottom: 4px;
+  }
+  p.experiance-sector {
+    font-size: 13px;
+    font-weight: 500;
+    color: $border;
+    margin-bottom: 14px;
+  }
+}
+.experiance-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  li {
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px 10px;
+    border: 1px solid $border;
+    border-radius: 12px;
+    color: $main;
+  }
 }
 .experiances-item {
   display: flex;
@@ -457,6 +492,25 @@ section#certifications {
   margin: 0 auto;
   margin-top: 70px;
   margin-bottom: 70px;
+}
+.contact-status {
+  min-height: 24px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 500;
+  color: $main;
+  &.is-error {
+    color: #c0392b;
+  }
+}
+.contact-alternative {
+  margin-top: 10px;
+  text-align: center;
+  color: $main;
+  a {
+    color: $border;
+    font-weight: 500;
+  }
 }
 :focus-visible {
   outline: -webkit-focus-ring-color auto 0px;

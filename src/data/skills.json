@@ -1,5 +1,6 @@
 [
     {
+        "id": "soft",
         "category": {
             "en": "Soft Skills",
             "fr": "Soft Skills"
@@ -43,6 +44,7 @@
         ]
     },
     {
+        "id": "languages",
         "category": {
             "en": "Languages",
             "fr": "Langages"
@@ -93,42 +95,58 @@
         ]
     },
     {
+        "id": "frameworks",
         "category": {
-            "en": "Databases",
-            "fr": "Bases de données"
+            "en": "Frameworks",
+            "fr": "Frameworks"
         },
         "detail": [
             {
                 "title": {
-                    "en": "MySQL",
-                    "fr": "MySQL"
+                    "en": "Symfony",
+                    "fr": "Symfony"
+                },
+                "value": 4
+            },
+            {
+                "title": {
+                    "en": "API Platform",
+                    "fr": "API Platform"
+                },
+                "value": 4
+            },
+            {
+                "title": {
+                    "en": "Sylius",
+                    "fr": "Sylius"
                 },
                 "value": 3
             },
             {
                 "title": {
-                    "en": "MongoDB",
-                    "fr": "MongoDB"
+                    "en": "Jquery",
+                    "fr": "Jquery"
                 },
-                "value": 1
+                "value": 3
             },
             {
                 "title": {
-                    "en": "Elasticsearch",
-                    "fr": "Elasticsearch"
+                    "en": "Bootstrap",
+                    "fr": "Bootstrap"
                 },
-                "value": 1
+                "value": 2
             },
             {
                 "title": {
-                    "en": "Meilisearch",
-                    "fr": "Meilisearch"
+                    "en": "React",
+                    "fr": "React"
                 },
-                "value": 1
+                "value": 2
             }
         ]
     },
     {
+        "id": "architecture",
         "category": {
             "en": "Architecture",
             "fr": "Architecture"
@@ -168,46 +186,203 @@
                     "fr": "CQRS"
                 },
                 "value": 2
+            },
+            {
+                "title": {
+                    "en": "RabbitMQ",
+                    "fr": "RabbitMQ"
+                },
+                "value": 3
             }
         ]
     },
     {
+        "id": "databases",
         "category": {
-            "en": "Frameworks",
-            "fr": "Frameworks"
+            "en": "Databases",
+            "fr": "Bases de données"
         },
         "detail": [
             {
                 "title": {
-                    "en": "Symfony",
-                    "fr": "Symfony"
-                },
-                "value": 4
-            },
-            {
-                "title": {
-                    "en": "Jquery",
-                    "fr": "Jquery"
+                    "en": "MySQL",
+                    "fr": "MySQL"
                 },
                 "value": 3
             },
             {
                 "title": {
-                    "en": "Bootstrap",
-                    "fr": "Bootstrap"
+                    "en": "PostgreSQL",
+                    "fr": "PostgreSQL"
                 },
-                "value": 2
+                "value": 3
             },
             {
                 "title": {
-                    "en": "React",
-                    "fr": "React"
+                    "en": "MariaDB",
+                    "fr": "MariaDB"
+                },
+                "value": 3
+            },
+            {
+                "title": {
+                    "en": "MongoDB",
+                    "fr": "MongoDB"
+                },
+                "value": 1
+            },
+            {
+                "title": {
+                    "en": "Elasticsearch",
+                    "fr": "Elasticsearch"
+                },
+                "value": 1
+            },
+            {
+                "title": {
+                    "en": "Meilisearch",
+                    "fr": "Meilisearch"
+                },
+                "value": 1
+            }
+        ]
+    },
+    {
+        "id": "ai",
+        "category": {
+            "en": "AI",
+            "fr": "IA"
+        },
+        "detail": [
+            {
+                "title": {
+                    "en": "MCP (Model Context Protocol)",
+                    "fr": "MCP (Model Context Protocol)"
+                },
+                "value": 3
+            },
+            {
+                "title": {
+                    "en": "LLM integration (Claude)",
+                    "fr": "Intégration de LLM (Claude)"
+                },
+                "value": 3
+            },
+            {
+                "title": {
+                    "en": "AI-assisted development",
+                    "fr": "Développement assisté par IA"
+                },
+                "value": 3
+            }
+        ]
+    },
+    {
+        "id": "devops",
+        "category": {
+            "en": "DevOps",
+            "fr": "DevOps"
+        },
+        "detail": [
+            {
+                "title": {
+                    "en": "Docker",
+                    "fr": "Docker"
+                },
+                "value": 3
+            },
+            {
+                "title": {
+                    "en": "Docker Swarm",
+                    "fr": "Docker Swarm"
+                },
+                "value": 3
+            },
+            {
+                "title": {
+                    "en": "CI/CD",
+                    "fr": "CI/CD"
+                },
+                "value": 3
+            },
+            {
+                "title": {
+                    "en": "Kubernetes",
+                    "fr": "Kubernetes"
                 },
                 "value": 2
             }
         ]
     },
     {
+        "id": "cloud",
+        "category": {
+            "en": "Cloud & Hosting",
+            "fr": "Cloud & hébergement"
+        },
+        "detail": [
+            {
+                "title": {
+                    "en": "Scalingo",
+                    "fr": "Scalingo"
+                },
+                "value": 3
+            },
+            {
+                "title": {
+                    "en": "Clever Cloud",
+                    "fr": "Clever Cloud"
+                },
+                "value": 3
+            },
+            {
+                "title": {
+                    "en": "Google Cloud",
+                    "fr": "Google Cloud"
+                },
+                "value": 2
+            },
+            {
+                "title": {
+                    "en": "S3 storage",
+                    "fr": "Stockage S3"
+                },
+                "value": 3
+            }
+        ]
+    },
+    {
+        "id": "compliance",
+        "category": {
+            "en": "Security & Compliance",
+            "fr": "Sécurité & conformité"
+        },
+        "detail": [
+            {
+                "title": {
+                    "en": "GDPR",
+                    "fr": "RGPD"
+                },
+                "value": 3
+            },
+            {
+                "title": {
+                    "en": "HDS (health data hosting)",
+                    "fr": "HDS (hébergement de données de santé)"
+                },
+                "value": 3
+            },
+            {
+                "title": {
+                    "en": "ISO 27001",
+                    "fr": "ISO 27001"
+                },
+                "value": 2
+            }
+        ]
+    },
+    {
+        "id": "vcs",
         "category": {
             "en": "Version Control",
             "fr": "Contrôle de version"
@@ -233,35 +408,6 @@
                     "fr": "Gitlab"
                 },
                 "value": 3
-            }
-        ]
-    },
-    {
-        "category": {
-            "en": "DevOps",
-            "fr": "DevOps"
-        },
-        "detail": [
-            {
-                "title": {
-                    "en": "Docker",
-                    "fr": "Docker"
-                },
-                "value": 3
-            },
-            {
-                "title": {
-                    "en": "CI/CD",
-                    "fr": "CI/CD"
-                },
-                "value": 3
-            },
-            {
-                "title": {
-                    "en": "Kubernetes",
-                    "fr": "Kubernetes"
-                },
-                "value": 2
             }
         ]
     }

@@ -24,7 +24,7 @@ const Experiences = ({ t }) => {
           </div>
         </div>
         <div className="tree-image">
-          <img src={tree} alt="#" />
+          <img src={tree} alt="" />
         </div>
       </div>
     </section>

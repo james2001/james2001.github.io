@@ -19,7 +19,7 @@ const Certifications = ({ t }) => {
           <div className="col-12">
             <div className="certifications-wraper">
               <AnimateOnScroll animation="fadeInUp" delay="0.2s" className="certifications-left">
-                <img src={openclassrooms} alt="#" />
+                <img src={openclassrooms} alt="OpenClassrooms" />
               </AnimateOnScroll>
               <AnimateOnScroll animation="fadeInUp" delay="0.3s" className="certifications-list">
                 {datas.map((certification, key) => {

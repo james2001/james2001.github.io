@@ -28,7 +28,7 @@ const Main = () => {
               <h1>{user.name}</h1>
               <h5>{user.headline[currentLang]}</h5>
               <AnimateOnScroll animation="zoomInUp" delay="0.1s" className="profile-photo">
-                <img src={imagesPath[imageName]} alt="me" onClick={toggleImage} />
+                <img src={imagesPath[imageName]} alt={user.name} onClick={toggleImage} />
               </AnimateOnScroll>
               <AnimateOnScroll animation="zoomInUp" delay="0.2s" className="arrow-down">
                 <a href="#qui-suis-je">

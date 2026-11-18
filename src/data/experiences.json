@@ -8,9 +8,18 @@
       "endDate": "2026-06",
       "location": "Paris, France",
       "company": "Japan Experience",
+      "sector": {
+         "fr": "Voyage",
+         "en": "Travel"
+      },
+      "stack": [
+         "Symfony 7",
+         "GitLab",
+         "Google Cloud"
+      ],
       "explanation": {
-         "en": "Optimization of the customer journey in close collaboration with the Product Owner. Technical audit and analysis of the existing system, optimization recommendations and Symfony version upgrade. Technical support for the team: implementation of best practices, code reviews and developer skill development. Tech stack: Symfony 7, GitLab, Google Cloud.",
-         "fr": "Optimisation du parcours client en collaboration étroite avec le Product Owner. Audit et analyse technique de l'existant, recommandations d'optimisation et montée de version Symfony. Accompagnement technique de l'équipe : mise en place de bonnes pratiques, revues de code et montée en compétences des développeurs. Stack technique : Symfony 7, GitLab, Google Cloud."
+         "en": "Optimization of the customer journey in close collaboration with the Product Owner. Technical audit and analysis of the existing system, optimization recommendations and Symfony version upgrade. Technical support for the team: implementation of best practices, code reviews and developer skill development.",
+         "fr": "Optimisation du parcours client en collaboration étroite avec le Product Owner. Audit et analyse technique de l'existant, recommandations d'optimisation et montée de version Symfony. Accompagnement technique de l'équipe : mise en place de bonnes pratiques, revues de code et montée en compétences des développeurs."
       }
    },
    {
@@ -22,9 +31,22 @@
       "endDate": "present",
       "location": "Puteaux, France",
       "company": "France Care",
+      "sector": {
+         "fr": "Santé",
+         "en": "Healthcare"
+      },
+      "stack": [
+         "Symfony 7",
+         "Stripe",
+         "HubSpot",
+         "Yousign",
+         "Eloquant",
+         "Scalingo",
+         "Clever Cloud"
+      ],
       "explanation": {
-         "en": "Technical leadership of the project and implementation of a complete patient follow-up back-office, GDPR and HDS compliant. Fractional CTO role, with business challenge work: needs framing, technical trade-offs, prioritization and team support. Integrations delivered: Eloquant for call tracking and history, HubSpot and Yousign for case management and signatures, Stripe for patient subscription and billing. Led the infrastructure migration to Scalingo / Clever Cloud, audited and hardened application security (authentication), and set up a new subscription and payment portal. Focus on security, code quality, flow reliability and automation in a healthcare environment with strong regulatory constraints (HDS, ISO 27001). Tech stack: Symfony 7, Stripe, HubSpot, HDS, Scalingo.",
-         "fr": "Pilotage technique du projet et mise en place d'un back-office complet de suivi patient, conforme RGPD et HDS. Rôle de CTO à temps partagé, avec un travail de challenge métier : cadrage des besoins, arbitrages techniques, priorisation et accompagnement des équipes. Intégrations réalisées : Eloquant pour le suivi et l'historique des appels, HubSpot et Yousign pour la gestion des dossiers et signatures, Stripe pour la souscription et la facturation des patients. Pilotage de la migration d'infrastructure vers Scalingo / Clever Cloud, audit et renforcement de la sécurité applicative (authentification), et mise en place d'un nouveau portail de souscription et de paiement. Focus sur la sécurité, la qualité du code, la fiabilité des flux et l'automatisation dans un environnement santé avec fortes contraintes réglementaires (HDS, ISO 27001). Stack technique : Symfony 7, Stripe, HubSpot, HDS, Scalingo."
+         "en": "Technical leadership of the project and implementation of a complete patient follow-up back-office, GDPR and HDS compliant. Fractional CTO role, with business challenge work: needs framing, technical trade-offs, prioritization and team support. Integrations delivered: Eloquant for call tracking and history, HubSpot and Yousign for case management and signatures, Stripe for patient subscription and billing. Led the infrastructure migration to Scalingo / Clever Cloud, audited and hardened application security (authentication), and set up a new subscription and payment portal. Focus on security, code quality, flow reliability and automation in a healthcare environment with strong regulatory constraints (HDS, ISO 27001).",
+         "fr": "Pilotage technique du projet et mise en place d'un back-office complet de suivi patient, conforme RGPD et HDS. Rôle de CTO à temps partagé, avec un travail de challenge métier : cadrage des besoins, arbitrages techniques, priorisation et accompagnement des équipes. Intégrations réalisées : Eloquant pour le suivi et l'historique des appels, HubSpot et Yousign pour la gestion des dossiers et signatures, Stripe pour la souscription et la facturation des patients. Pilotage de la migration d'infrastructure vers Scalingo / Clever Cloud, audit et renforcement de la sécurité applicative (authentification), et mise en place d'un nouveau portail de souscription et de paiement. Focus sur la sécurité, la qualité du code, la fiabilité des flux et l'automatisation dans un environnement santé avec fortes contraintes réglementaires (HDS, ISO 27001)."
       }
    },
    {
@@ -36,9 +58,21 @@
       "endDate": "present",
       "location": "Puteaux, France",
       "company": "GDB Consulting",
+      "sector": {
+         "fr": "Énergie",
+         "en": "Energy"
+      },
+      "stack": [
+         "Symfony 8",
+         "MySQL",
+         "S3 (MinIO)",
+         "Docker",
+         "MCP",
+         "Claude"
+      ],
       "explanation": {
-         "en": "Design and development of a custom CRM for an energy broker (electricity / gas): management of clients, contacts and contracts (PDL/PCE delivery points), typed documents, segments and dashboard, with Excel import/export. In 2026, opening the CRM to AI: integration of an MCP connector with Claude, multi-supplier pricing and comparison work via API, and voice-assistant experimentation. Delivered through Kiora with autonomy over technical and architectural choices. Tech stack: Symfony 8, MySQL, S3 storage (MinIO), Docker.",
-         "fr": "Conception et développement d'un CRM sur mesure pour un courtier en énergie (électricité / gaz) : gestion des clients, contacts et contrats (points de livraison PDL/PCE), documents typés, segments et tableau de bord, avec import/export Excel. En 2026, ouverture du CRM à l'IA : intégration d'un connecteur MCP avec Claude, travaux de pricing et de comparatif multi-fournisseurs via API, et expérimentation d'assistance vocale. Réalisé via Kiora, avec autonomie sur les choix techniques et architecturaux. Stack technique : Symfony 8, MySQL, stockage S3 (MinIO), Docker."
+         "en": "Design and development of a custom CRM for an energy broker (electricity / gas): management of clients, contacts and contracts (PDL/PCE delivery points), typed documents, segments and dashboard, with Excel import/export. In 2026, opening the CRM to AI: integration of an MCP connector with Claude, multi-supplier pricing and comparison work via API, and voice-assistant experimentation. Delivered through Kiora with autonomy over technical and architectural choices.",
+         "fr": "Conception et développement d'un CRM sur mesure pour un courtier en énergie (électricité / gaz) : gestion des clients, contacts et contrats (points de livraison PDL/PCE), documents typés, segments et tableau de bord, avec import/export Excel. En 2026, ouverture du CRM à l'IA : intégration d'un connecteur MCP avec Claude, travaux de pricing et de comparatif multi-fournisseurs via API, et expérimentation d'assistance vocale. Réalisé via Kiora, avec autonomie sur les choix techniques et architecturaux."
       }
    },
    {
@@ -50,6 +84,17 @@
       "endDate": "2025-07",
       "location": "Chatou, France",
       "company": "Digdeo",
+      "sector": {
+         "fr": "Veille technologique, Big Data",
+         "en": "Web intelligence, Big Data"
+      },
+      "stack": [
+         "Symfony",
+         "API Platform",
+         "RabbitMQ",
+         "MariaDB",
+         "Meilisearch"
+      ],
       "explanation": {
          "en": "Development of a technological monitoring solution aimed at mapping the entire Internet to identify website hosts. Architecture and implementation of infrastructure capable of handling massive data volumes (BigData) with Symfony, API Platform, RabbitMQ, MariaDB and Meilisearch. Continuous performance optimization to index and search billions of data in real time. Close collaboration with Kiora for project success, with autonomy in technical and architectural choices.",
          "fr": "Développement d'une solution de veille technologique visant à cartographier l'intégralité d'Internet pour identifier les hébergeurs de sites web. Architecture et implémentation d'une infrastructure capable de gérer des volumes massifs de données (BigData) avec Symfony, API Platform, RabbitMQ, MariaDB et Meilisearch. Optimisation continue des performances pour indexer et rechercher des milliards de données en temps réel. Collaboration étroite avec Kiora pour la réussite du projet, avec autonomie dans les choix techniques et architecturaux."
@@ -64,6 +109,13 @@
       "endDate": "2024-11",
       "location": "Puteaux, France",
       "company": "Safran Electronics & Defense",
+      "sector": {
+         "fr": "Défense",
+         "en": "Defense"
+      },
+      "stack": [
+         "Symfony 7"
+      ],
       "explanation": {
          "en": "Following the takeover of a back-office project at Safran Optronique, I was responsible for evolving an existing application while taking into account the challenges of very limited technical handover. My main role consisted of redefining the architecture and functionality of the tool, while ensuring security, a primary concern in this sector. Took over an existing project with little to no detailed knowledge transfer. Integration of improvements for better scalability and maintainability of the product, while ensuring regular updates without service interruption.",
          "fr": "Suite à la reprise d'un projet back-office chez Safran Optronique, je me suis chargé de faire évoluer une application existante tout en prenant en compte les défis d'une passation technique très limitée. Mon rôle principal a consisté à redéfinir l'architecture et la fonctionnalité de l'outil, tout en assurant la sécurité, un enjeu primordial dans ce secteur. Prise en charge d'un projet existant avec peu voire pas de transfert de connaissances détaillé. Intégration d'améliorations pour une meilleure scalabilité et maintenabilité du produit, tout en assurant des mises à jour régulières sans rupture de service."
@@ -78,6 +130,16 @@
       "endDate": "2023-09",
       "location": "Puteaux, France",
       "company": "Brico Brico",
+      "sector": {
+         "fr": "E-commerce",
+         "en": "E-commerce"
+      },
+      "stack": [
+         "Sylius",
+         "Google Tag Manager",
+         "Axeptio",
+         "Facebook Pixel"
+      ],
       "explanation": {
          "en": "During my collaboration with Louis and his team, I was involved in various technical tasks to improve their Sylius project. Among the notable achievements, I managed the integration of Axeptio using Google Tag Manager (GTM) and Facebook Pixel to optimize consent management and user tracking. I also integrated several elements into their project, thus contributing to enriching and improving the user experience.",
          "fr": "Au cours de ma collaboration avec Louis et son équipe, j'ai été impliqué dans diverses tâches techniques pour améliorer leur projet Sylius. Parmi les réalisations notables, j'ai géré l'intégration d'Axeptio en utilisant Google Tag Manager (GTM) et le Facebook Pixel pour optimiser la gestion des consentements et le suivi des utilisateurs. J'ai également intégré plusieurs éléments à leur projet, contribuant ainsi à enrichir et améliorer l'expérience utilisateur."
@@ -92,6 +154,10 @@
       "endDate": "2023-03",
       "location": "Paris, France",
       "company": "relevanC",
+      "sector": {
+         "fr": "Retail media",
+         "en": "Retail media"
+      },
       "explanation": {
          "en": "Application code audit with report writing and monitoring setup. API route optimization.",
          "fr": "Audit du code de l'application avec rédaction d'un rapport et mise en place de monitoring. Optimisation de routes sur l'API"
@@ -106,6 +172,10 @@
       "endDate": "2022-09",
       "location": "Paris, France",
       "company": "MeilleurTaux",
+      "sector": {
+         "fr": "Assurance, épargne",
+         "en": "Insurance, savings"
+      },
       "explanation": {
          "en": "Building a subscription funnel for life insurance / PER.",
          "fr": "Construction d'un tunnel de souscription en assurance vie / PER"
@@ -120,6 +190,13 @@
       "endDate": "2022-06",
       "location": "Aix-en-Provence, France",
       "company": "Onatera",
+      "sector": {
+         "fr": "E-commerce",
+         "en": "E-commerce"
+      },
+      "stack": [
+         "Sylius"
+      ],
       "explanation": {
          "en": "Creation of a multilingual online sales platform. Adding client-specific features on Sylius.",
          "fr": "Création d'une plateforme de vente en ligne multilingue. Ajout de spécificité du client sur Sylius"
@@ -128,15 +205,23 @@
    {
       "role": {
          "en": "Symfony/API Developer",
-         "fr": "Developeur Symfony/API"
+         "fr": "Développeur Symfony/API"
       },
       "startDate": "2021-05",
       "endDate": "2021-09",
       "location": "Paris, France",
       "company": "Yousign",
+      "sector": {
+         "fr": "Signature électronique",
+         "en": "E-signature"
+      },
+      "stack": [
+         "Symfony",
+         "Segment"
+      ],
       "explanation": {
          "en": "Implementation of user tracking with Segment tool. Evolution on advanced signature, better error management, tracking improvements (email notifications).",
-         "fr": "Mise en place d'un Traking d'utilisateurs avec l'outils Segment. Evolution sur la signature avancée, meilleure gestion d'erreurs, améliorations du suivi (notifications par e-mail)"
+         "fr": "Mise en place d'un Tracking d'utilisateurs avec l'outil Segment. Evolution sur la signature avancée, meilleure gestion d'erreurs, améliorations du suivi (notifications par e-mail)"
       }
    },
    {
@@ -148,6 +233,14 @@
       "endDate": "2021-04",
       "location": "Paris, France",
       "company": "Assoconnect",
+      "sector": {
+         "fr": "SaaS pour associations",
+         "en": "SaaS for non-profits"
+      },
+      "stack": [
+         "API Platform",
+         "React"
+      ],
       "explanation": {
          "en": "Exposure of new resources on the existing API with legacy data synchronization. The goal being to migrate the project to an API / React structure and leave the legacy code.",
          "fr": "Exposition de nouvelles ressources sur l'API existante avec une synchronisation des données legacy. Le but étant de migrer le projet sur une structure API / React et quitter le code legacy"
@@ -162,6 +255,15 @@
       "endDate": "2021-02",
       "location": "Paris, France",
       "company": "ekWateur",
+      "sector": {
+         "fr": "Énergie",
+         "en": "Energy"
+      },
+      "stack": [
+         "Symfony",
+         "REST",
+         "Feature flags"
+      ],
       "explanation": {
          "en": "Implementation of API calls to a new REST WS for migration (with feature flag). Code quality audit. Implementation of quality control tools.",
          "fr": "Mise en place des appels API vers un nouveau WS Rest en vue d'une migration (avec feature flag). Audit sur la qualité de code. Mise en place d'outils de contrôle qualité"
@@ -176,6 +278,11 @@
       "endDate": "2020-03",
       "location": "Paris, France",
       "company": "Dimension 4",
+      "stack": [
+         "Symfony",
+         "XML-RPC",
+         "REST"
+      ],
       "explanation": {
          "en": "Implementation of two Web Service connectors, one in XML RPC and the other in REST. I developed a component and a Bundle for the second one.",
          "fr": "Mise en place de deux connecteurs à des Web Service, un en XML RPC et l'autre en REST. J'ai développé un composant et un Bundle pour le second."
@@ -190,6 +297,10 @@
       "endDate": "2020-07",
       "location": "Puteaux, France",
       "company": "Manymore",
+      "sector": {
+         "fr": "Assurance vie",
+         "en": "Life insurance"
+      },
       "explanation": {
          "en": "Implementation of life insurance management act dematerialization solutions for AXA and Cardif. Creation of an extranet for contracts/clients and commissions visualization.",
          "fr": "Mise en place de solutions de dématérialisation des actes de gestion d'assurance vie pour AXA et Cardif. Réalisation d'un extranet pour la visualisation des contrats / clients et commissions."
@@ -204,6 +315,13 @@
       "endDate": "2014-06",
       "location": "La Garenne-Colombes, France",
       "company": "Orca Formation",
+      "sector": {
+         "fr": "Automobile, crédit",
+         "en": "Automotive, consumer credit"
+      },
+      "stack": [
+         "Symfony"
+      ],
       "explanation": {
          "en": "Creation of the sales and commission management application for Renault vehicles. Application used by the entire Renault France network. Credit/LOA simulator with rate management for My Money Bank.",
          "fr": "Création de l'application de gestion des ventes et des commissions sur les véhicules pour Renault. Application utilisée par tout le réseau Renault France. Simulateur de crédit/LOA avec gestion des barèmes pour My Money Bank."

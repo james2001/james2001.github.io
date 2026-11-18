@@ -10,7 +10,7 @@ const About = ({ t }) => {
         <div className="row">
           <div className="col-12">
             <div className="qui-suis-je-image">
-              <img src={dev} alt="moi" />
+              <img src={dev} alt="" />
             </div>
             <AnimateOnScroll animation="fadeInUp" delay="0s" className="qui-suis-je-content">
               <AnimateOnScroll animation="fadeInUp" delay="0.1s" className="section-title">

@@ -34,7 +34,7 @@ const getLocalizedText = (field, lang) => {
 };
 
 const ExpTree = ({ data }) => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation("common");
   const currentLang = i18n.language;
 
   return (
@@ -48,7 +48,13 @@ const ExpTree = ({ data }) => {
     </div>
     <div className="experiance-office">
       <h3>{data.company}</h3>
+      {data.sector && <p className="experiance-sector">{getLocalizedText(data.sector, currentLang)}</p>}
       <p>{getLocalizedText(data.explanation, currentLang)}</p>
+      {data.stack?.length > 0 && (
+        <ul className="experiance-stack" aria-label={t("experience.stack")}>
+          {data.stack.map((tech) => <li key={tech}>{tech}</li>)}
+        </ul>
+      )}
     </div>
   </AnimateOnScroll>
   );

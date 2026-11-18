@@ -12,6 +12,14 @@ i18next
   .init({
     interpolation: { escapeValue: false },  // React already does escaping
     fallbackLng: 'en',
+    detection: {
+      // /en/ affiche l'anglais (page pré-rendue en anglais), sinon choix mémorisé puis langue du navigateur.
+      order: ['path', 'localStorage', 'navigator'],
+      lookupFromPathIndex: 0,
+      // Seul un clic sur un drapeau mémorise la langue (voir Header) : visiter /en/ ne doit pas
+      // faire basculer durablement la page française en anglais.
+      caches: [],
+    },
     resources: {
       en: {
         common: common_en               // 'common' is our custom namespace

@@ -1,71 +1,84 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import close from '../assets/images/close.svg';
 import menu from '../assets/images/menu.svg';
 import github from '../assets/images/github.png';
+import flagFr from '../assets/images/flag-fr.svg';
+import flagGb from '../assets/images/flag-gb.svg';
 import user from '../data/user.json';
 import { withTranslation } from 'react-i18next';
-import i18next from "i18next";
 import ExportPDF from './ExportPDF';
 
-const Header = ({ t }) => {
-  const changeLanguage = (lng) => {
-    i18next.changeLanguage(lng);
+const NAV_ITEMS = [
+  { href: '#qui-suis-je', key: 'title.about' },
+  { href: '#competences', key: 'title.skills' },
+  { href: '#experiances', key: 'title.experiences' },
+  { href: '#formations', key: 'title.trainings' },
+  { href: '#certifications', key: 'title.certifications' },
+  { href: '#contact', key: 'title.contact', className: 'nav-button' },
+];
+
+const NavLinks = ({ t, onNavigate }) => (
+  <ul className="navbar-nav ms-auto">
+    {NAV_ITEMS.map(({ href, key, className }, index) => (
+      <li className="nav-item" key={href}>
+        <a
+          className={['nav-link', index === 0 && 'active', className].filter(Boolean).join(' ')}
+          href={href}
+          onClick={onNavigate}
+        >
+          {t(key)}
+        </a>
+      </li>
+    ))}
+  </ul>
+);
+
+const Header = ({ t, i18n }) => {
+  const chooseLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    try {
+      localStorage.setItem('i18nextLng', lng);
+    } catch {
+      // Stockage indisponible (navigation privée…) : le choix vaut pour la visite en cours.
     }
+  };
+
+  // Menu mobile piloté par React : le JS de Bootstrap n'est pas chargé sur le site.
+  const [menuOpen, setMenuOpen] = useState(false);
+  const closeMenu = () => setMenuOpen(false);
+
+  useEffect(() => {
+    if (!menuOpen) return undefined;
+    const onKeyDown = (event) => event.key === 'Escape' && closeMenu();
+    document.addEventListener('keydown', onKeyDown);
+    return () => document.removeEventListener('keydown', onKeyDown);
+  }, [menuOpen]);
+
   return (
     <Fragment>
       <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
           <span className="navbar-brand">{user.name}</span>
-        <div className='container-button'>
-          <button onClick={() => changeLanguage('fr')} className="flag-button">
-             <img src="https://www.herodote.net/_image/france.jpg" alt="Drapeau français" style={{ width: '30px', height: 'auto' }} />
-          </button>
-          <button onClick={() => changeLanguage('en')} className="flag-button">
-             <img src="https://media.istockphoto.com/id/880562092/fr/vectoriel/grande-bretagne-drapeau-du-royaume-uni.jpg?s=612x612&w=0&k=20&c=Y_SgIOLAhcQnmHn58IibtTsQahlNoX3UENYnrf-N698=" alt="Drapeau anglais" style={{ width: '30px', height: 'auto' }} />
-          </button>
-        </div>
+          <div className='container-button'>
+            <button onClick={() => chooseLanguage('fr')} className="flag-button" aria-label={t('a11y.langFr')} title={t('a11y.langFr')}>
+              <img src={flagFr} alt="" className="flag-icon" />
+            </button>
+            <button onClick={() => chooseLanguage('en')} className="flag-button" aria-label={t('a11y.langEn')} title={t('a11y.langEn')}>
+              <img src={flagGb} alt="" className="flag-icon" />
+            </button>
+          </div>
           <button
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#mobile-menu"
+            onClick={() => setMenuOpen(true)}
             aria-controls="mobile-menu"
+            aria-expanded={menuOpen}
+            aria-label={t('a11y.openMenu')}
           >
-            <img src={menu} alt="menu" />
+            <img src={menu} alt="" />
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
-                <a className="nav-link active" href="#qui-suis-je">
-                  {t('title.about')}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#competences">
-                  {t('title.skills')}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#experiances">
-                  {t('title.experiences')}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#formations">
-                  {t('title.trainings')}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#certifications">
-                  {t('title.certifications')}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link nav-button" href="#contact">
-                  {t('title.contact')}
-                </a>
-              </li>
-            </ul>
+            <NavLinks t={t} />
             <ExportPDF />
           </div>
         </div>
@@ -76,55 +89,25 @@ const Header = ({ t }) => {
         href="https://github.com/james2001/james2001.github.io"
         target="_blank" rel="noreferrer"
       >
-        <img src={github} alt="#" />
+        <img src={github} alt={t('a11y.sourceCode')} />
       </a>
 
       <div
-        className="offcanvas offcanvas-end mobile-menu-wraper"
+        className={`offcanvas offcanvas-end mobile-menu-wraper${menuOpen ? ' show' : ''}`}
         tabIndex={-1}
         id="mobile-menu"
-        aria-labelledby="offcanvasExampleLabel"
+        aria-hidden={!menuOpen}
       >
         <div className="offcanvas-header">
-          <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">
-            <img src={close} alt="#" />
+          <button type="button" onClick={closeMenu} aria-label={t('a11y.closeMenu')}>
+            <img src={close} alt="" />
           </button>
         </div>
         <div className="offcanvas-body">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <a className="nav-link active" href="#qui-suis-je">
-                {t('title.about')}
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#competences">
-                {t('title.skills')}
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#experiances">
-                {t('title.experiences')}
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#formations">
-                {t('title.trainings')}
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#certifications">
-                {t('title.certifications')}
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link nav-button" href="#contact">
-                {t('title.contact')}
-              </a>
-            </li>
-          </ul>
+          <NavLinks t={t} onNavigate={closeMenu} />
         </div>
       </div>
+      {menuOpen && <div className="offcanvas-backdrop fade show" onClick={closeMenu} />}
     </Fragment>
   );
 };

@@ -9,13 +9,13 @@ const Competences = ({ t, i18n }) => {
   const baseLang = i18n.language?.substring(0, 2) || "en";
   const currentLang = ["fr", "en"].includes(baseLang) ? baseLang : "en";
 
-  // Organisation des compétences en 3 colonnes
-  const column1 = ["Soft Skills", currentLang === "fr" ? "Langages" : "Languages"];
-  const column2 = [currentLang === "fr" ? "Bases de données" : "Databases", "Architecture"];
-  const column3 = ["Frameworks", currentLang === "fr" ? "Contrôle de version" : "Version Control", "DevOps"];
+  // Organisation des compétences en 3 colonnes, par identifiant de catégorie (voir skills.json)
+  const column1 = ["soft", "languages", "ai", "vcs"];
+  const column2 = ["frameworks", "databases", "compliance"];
+  const column3 = ["architecture", "devops", "cloud"];
 
-  const getSkillsByColumn = (categories) => {
-    return datas.filter(skill => categories.includes(skill.category[currentLang]));
+  const getSkillsByColumn = (ids) => {
+    return ids.map((id) => datas.find((skill) => skill.id === id)).filter(Boolean);
   };
 
   return (
@@ -24,7 +24,7 @@ const Competences = ({ t, i18n }) => {
         <div className="row">
           <div className="col-12">
             <div className="competences-image">
-              <img src={skill} alt="#" />
+              <img src={skill} alt="" />
             </div>
           </div>
           <div className="col-12">

@@ -1,6 +1,10 @@
 {
+    "meta": {
+        "title": "Stéphane Rathgeber - Lead Dev Symfony PHP | Expert API Platform & Architecture",
+        "description": "Lead Développeur Symfony PHP avec +15 ans d'expérience. Expert en architecture API, microservices, BigData et DevOps. Disponible pour missions Lead Dev / CTO."
+    },
     "title": {
-        "about": "Qui suis-je\u00A0?",
+        "about": "Qui suis-je ?",
         "skills": "Compétences",
         "experiences": "Expériences",
         "trainings": "Formations",
@@ -8,9 +12,32 @@
         "contact": "Contact"
     },
     "about": {
-        "part_1": "Développeur PHP depuis plus de 10 ans et développeur Symfony depuis sa version 1.3, j'ai eu l'occasion de travailler avec de grandes sociétés (Renault, Accor, My Money Bank, AXA, Cardif, Maif).",
+        "part_1": "Développeur PHP depuis 2008 et développeur Symfony depuis sa version 1.3, j'ai eu l'occasion de travailler avec de grandes sociétés (Renault, Accor, My Money Bank, AXA, Cardif, Maif).",
         "part_2": "J'ai accompagné et fait monter en compétence, par mon expertise, plusieurs dizaines de développeurs.",
-        "part_3": "Je suis capable de commencer une application \"from scratch\" ou  d'en reprendre une existante pour la faire évoluer. Je peux également mettre en place un système de déploiement continu."
+        "part_3": "Je suis capable de commencer une application \"from scratch\" ou d'en reprendre une existante pour la faire évoluer. Je peux également mettre en place un système de déploiement continu."
+    },
+    "experience": {
+        "stack": "Stack"
+    },
+    "contact": {
+        "name": "Nom",
+        "email": "E-mail",
+        "subject": "Sujet",
+        "message": "Message",
+        "send": "Envoyer",
+        "sending": "Envoi…",
+        "success": "Merci, votre message est bien parti. Je vous réponds rapidement.",
+        "error": "L'envoi a échoué. Vous pouvez réessayer ou me contacter sur LinkedIn ou Malt.",
+        "alternative": "Vous pouvez aussi me contacter sur",
+        "or": "ou"
+    },
+    "a11y": {
+        "openMenu": "Ouvrir le menu",
+        "closeMenu": "Fermer le menu",
+        "backToTop": "Revenir en haut de la page",
+        "sourceCode": "Code source du site sur GitHub",
+        "langFr": "Afficher en français",
+        "langEn": "Afficher en anglais"
     },
     "export": {
         "downloadPDF": "Télécharger CV",

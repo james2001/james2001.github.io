@@ -27,7 +27,7 @@ const Footer = () => {
           <div className="col-12">
             <div className="footer-wraper">
               <AnimateOnScroll animation="fadeInUp" delay="0.1s" className="copyright">
-                <p>© 2021 {user.name}</p>
+                <p>© {new Date().getFullYear()} {user.name}</p>
               </AnimateOnScroll>
               <AnimateOnScroll animation="fadeInUp" delay="0.3s" className="footer-social">
                 <a href="https://www.instagram.com/defispatisserie" className="link-instagram" target="_blank" rel="noreferrer">

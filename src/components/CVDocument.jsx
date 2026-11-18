@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   skillCategory: {
-    width: '48%',
+    width: '31.5%',
     marginBottom: 12,
     padding: 8,
     backgroundColor: '#f8f9fa',
@@ -142,6 +142,33 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     fontWeight: 'bold',
   },
+  experienceSector: {
+    fontSize: 9,
+    color: '#5b7cb3',
+    marginBottom: 2,
+  },
+  experienceStack: {
+    fontSize: 8.5,
+    color: '#2c3e50',
+    marginTop: 4,
+  },
+  experienceStackLabel: {
+    fontWeight: 'bold',
+  },
+  formationItem: {
+    marginBottom: 6,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  formationName: {
+    fontSize: 10,
+    color: '#34495e',
+    flex: 1,
+  },
+  formationYears: {
+    fontSize: 9,
+    color: '#7f8c8d',
+  },
   twoColumns: {
     flexDirection: 'row',
     gap: 15,
@@ -151,29 +178,31 @@ const styles = StyleSheet.create({
   },
 });
 
-// Fonction pour formater les dates
+// Fonction pour formater les dates (endDate peut valoir "present" pour une mission en cours)
 const formatDate = (startDate, endDate, lang) => {
   const months = {
     fr: ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'],
     en: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
   };
-
-  const [startYear, startMonth] = startDate.split('-');
-  const [endYear, endMonth] = endDate.split('-');
-
   const monthNames = months[lang] || months.en;
-  const startMonthName = monthNames[parseInt(startMonth) - 1];
-  const endMonthName = monthNames[parseInt(endMonth) - 1];
+  const format = (date) => {
+    const [year, month] = date.split('-');
+    return `${monthNames[parseInt(month, 10) - 1]} ${year}`;
+  };
+  const end = endDate === 'present' ? (lang === 'fr' ? "aujourd'hui" : 'present') : format(endDate);
 
-  return `${startMonthName} ${startYear} - ${endMonthName} ${endYear}`;
+  return `${format(startDate)} - ${end}`;
 };
+
+const localized = (field, lang) => (field && typeof field === 'object' ? field[lang] ?? field.en : field);
 
 // Fonction pour afficher les niveaux de compétence
 const getSkillLevel = (value) => {
   return `${value}/4`;
 };
 
-const CVDocument = ({ userData, skillsData, experiencesData, certificationsData, lang, anonymous }) => {
+const CVDocument = ({ userData, skillsData, experiencesData, certificationsData, formationsData = [], summary, lang, anonymous }) => {
+  const headline = localized(userData.headline, lang);
   return (
     <Document>
       <Page size="A4" style={styles.page}>
@@ -181,13 +210,13 @@ const CVDocument = ({ userData, skillsData, experiencesData, certificationsData,
         {!anonymous && (
           <View style={styles.header}>
             <Text style={styles.name}>{userData.name}</Text>
-            <Text style={styles.title}>Tech Lead Symfony PHP</Text>
+            <Text style={styles.title}>{headline}</Text>
           </View>
         )}
 
         {anonymous && (
           <View style={styles.header}>
-            <Text style={styles.title}>Tech Lead Symfony PHP</Text>
+            <Text style={styles.title}>{headline}</Text>
           </View>
         )}
 
@@ -196,10 +225,7 @@ const CVDocument = ({ userData, skillsData, experiencesData, certificationsData,
           <Text style={styles.sectionTitle}>
             {lang === 'fr' ? 'Profil' : 'Profile'}
           </Text>
-          <Text style={styles.text}>
-            {lang === 'fr'
-              ? "Développeur PHP depuis plus de 10 ans et développeur Symfony depuis sa version 1.3, j'ai eu l'occasion de travailler avec de grandes sociétés (Renault, Accor, My Money Bank, AXA, Cardif, Maif). J'ai accompagné et fait monter en compétence plusieurs dizaines de développeurs."
-              : "PHP developer for more than 10 years and Symfony developer since its version 1.3, I had the opportunity to work with large companies (Renault, Accor, My Money Bank, AXA, Cardif, Maif). I accompanied and raised in competence several tens of developers."}
+          <Text style={styles.text}>{summary}
           </Text>
         </View>
 
@@ -210,7 +236,7 @@ const CVDocument = ({ userData, skillsData, experiencesData, certificationsData,
           </Text>
           <View style={styles.skillsGrid}>
             {skillsData.map((skillCategory, index) => (
-              <View key={index} style={styles.skillCategory}>
+              <View key={index} style={styles.skillCategory} wrap={false}>
                 <Text style={styles.skillCategoryTitle}>
                   {typeof skillCategory.category === 'object'
                     ? skillCategory.category[lang]
@@ -237,7 +263,7 @@ const CVDocument = ({ userData, skillsData, experiencesData, certificationsData,
             {lang === 'fr' ? 'Expériences' : 'Experiences'}
           </Text>
           {experiencesData.map((exp, index) => (
-            <View key={index} style={styles.experienceItem}>
+            <View key={index} style={styles.experienceItem} wrap={false}>
               <View style={styles.experienceHeader}>
                 <Text style={styles.experienceRole}>
                   {typeof exp.role === 'object' ? exp.role[lang] : exp.role}
@@ -247,17 +273,37 @@ const CVDocument = ({ userData, skillsData, experiencesData, certificationsData,
                 </Text>
               </View>
               <Text style={styles.experienceCompany}>{exp.company}</Text>
+              {exp.sector && <Text style={styles.experienceSector}>{localized(exp.sector, lang)}</Text>}
               <Text style={styles.experienceLocation}>{exp.location}</Text>
               <Text style={styles.experienceDescription}>
-                {typeof exp.explanation === 'object' ? exp.explanation[lang] : exp.explanation}
+                {localized(exp.explanation, lang)}
               </Text>
+              {exp.stack?.length > 0 && (
+                <Text style={styles.experienceStack}>
+                  <Text style={styles.experienceStackLabel}>{lang === 'fr' ? 'Stack : ' : 'Stack: '}</Text>
+                  {exp.stack.join(', ')}
+                </Text>
+              )}
             </View>
           ))}
         </View>
       </Page>
 
-      {/* Page 3 - Certifications */}
+      {/* Page 3 - Formation et certifications */}
       <Page size="A4" style={styles.page}>
+        {formationsData.length > 0 && (
+          <View style={styles.section}>
+            <Text style={styles.sectionTitle}>
+              {lang === 'fr' ? 'Formation' : 'Education'}
+            </Text>
+            {formationsData.map((formation, index) => (
+              <View key={index} style={styles.formationItem}>
+                <Text style={styles.formationName}>• {formation.what} — {formation.where}</Text>
+                <Text style={styles.formationYears}>{formation.when}</Text>
+              </View>
+            ))}
+          </View>
+        )}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>
             {lang === 'fr' ? 'Certifications' : 'Certifications'}

@@ -10,7 +10,7 @@ const Formations = ({ t }) => {
     <section id="formations">
       <div className="container">
         <div className="graduation-image">
-          <img src={cap} alt="skill" />
+          <img src={cap} alt="" />
         </div>
         <div className="row">
           <div className="col-12">
